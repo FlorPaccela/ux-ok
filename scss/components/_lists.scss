@@ -1,0 +1,22 @@
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style-position: inside;
+    li {
+        font-size: 16px;
+        font-weight: 200;
+        color: $color-gray-50;
+        &::marker {
+            color: $color-brand-primary;
+        }
+    }
+}
+
+.checklist{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}

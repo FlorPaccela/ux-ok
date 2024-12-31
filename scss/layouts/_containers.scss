@@ -1,0 +1,60 @@
+
+// CONTAINERS //
+
+$container-xs: 356px;
+$container-small: 540px;
+$container-medium: 728px;
+$container-large: 952px;
+$container-xl: 1160px;
+$container-xxl: 1440px;
+
+@mixin container ($container-size) {
+    max-width: $container-size;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    &-xs {
+        @include container($container-xs);
+        @include media (mobile) {
+            @include container($container-xs);
+        }
+    }
+    &-small {
+        @include container($container-small);
+        @include media (mobile) {
+            @include container($container-small);
+        }
+    }
+    &-medium {
+        @include container($container-medium);
+        @include media (mobile) {
+            @include container($container-small);
+        }
+    }
+    &-large {
+        @include container($container-large);
+        @include media (mobile) {
+            @include container($container-small);
+        }
+    }
+    &-xl {
+        @include container($container-xl);
+        @include media (mobile) {
+            @include container($container-small);
+        }
+    }
+    &-xxl {
+        @include container($container-xxl);
+        @include media (mobile) {
+            @include container($container-small);
+        }
+    }
+    &-custom {
+        max-width: $container-small;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+

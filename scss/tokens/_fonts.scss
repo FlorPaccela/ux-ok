@@ -1,0 +1,37 @@
+
+// FONTS SIZES // 
+
+$font-size-50: 12px;
+$font-size-75: 14px;
+$font-size-100: 16px;
+$font-size-200: 18px;
+$font-size-300: 20px;
+$font-size-400: 22px;
+$font-size-500: 25px;
+$font-size-600: 28px;
+$font-size-700: 32px;
+$font-size-800: 36px;
+$font-size-900: 40px;
+$font-size-1000: 45px;
+$font-size-1100: 51px;
+$font-size-1200: 58px;
+$font-size-1300: 65px;
+
+// LINE HEIGHT //
+
+$line-height-default: 1.2;
+$line-height-small: 1.3;
+$line-height-medium: 1.5;
+$line-height-large: 1.7;
+
+
+//MIXIN SIZE AND RESPONSIBE //
+
+@mixin font-size($font-size, $line-height){
+    font-size: $font-size;
+    line-height: calc($font-size*$line-height);
+    @include media (mobile){
+        font-size: calc($font-size / 1.125);
+        line-height: calc($font-size / 1.125)*$line-height;
+    }
+}

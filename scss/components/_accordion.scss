@@ -1,0 +1,73 @@
+
+.accordion {
+    width: 100%;;
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: hidden;
+  }
+  
+  /* Accordion Item */
+  .accordion-item {
+    border-bottom: 1px solid $color-brand-primary;
+    button {
+        padding-left: 8px;
+        &::before {
+            content: url(../../assets/icon-plus.svg);
+            margin-right: 8px;
+        }
+    }    
+  }
+  
+  button {
+    &::before:hover {
+        content: url(../../assets/icon-plus-secondary.svg);
+    }
+  }
+
+  /* Accordion Header */
+  .accordion-header {
+    width: 100%;
+    padding: 24px;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: start;
+    color: $color-gray-50;
+    background-color: $color-brand-secondary;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: $color-brand-primary 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    color: $color-brand-secondary;
+    background-color: $color-brand-primary;
+  }
+
+  .accordion-header:focus {
+    outline: none; 
+  }
+  
+  /* Accordion Content */
+  .accordion-content {
+    padding: 16px 16px 24px 16px;
+    display: none;
+    background-color:$color-brand-secondary;
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 24px;
+    }
+  }
+  
+  /* Active styles */
+  .accordion-header.active {
+    color: $color-gray-50;
+    background-color: $color-brand-secondary;
+  }
+  
+  .accordion-content.active {
+    display: block;
+  }
+  
+  

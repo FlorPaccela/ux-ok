@@ -1,0 +1,47 @@
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &-tag {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+.tag {
+    padding: $spacing-100 ;
+    border: solid 1px $color-gray-50;
+}
+
+.price-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    padding: $spacing-800;
+    border: solid 1px $color-brand-primary;
+    h4 {
+        font-weight: 300;
+        color: $color-gray-50;
+    }
+    @include media (mobile){
+        width: auto;
+    }
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: $spacing-100;
+    align-items: center;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: 300;
+}

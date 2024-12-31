@@ -1,0 +1,47 @@
+
+label {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 4px;
+}
+
+input, textarea {
+  font-size: 14px;
+  font-weight: 200;
+  color: $color-gray-50;
+  padding: 16px;
+  background-color: $color-brand-secondary;
+  border: solid 1px $color-brand-primary;
+  border-radius: 0;
+  &:focus {
+    font-size: 14px;
+    font-weight: 200;
+    outline: none; /* Quitar el borde predeterminado */
+    border-color: $color-brand-primary;
+    box-shadow: none;
+  }
+  &::placeholder{ 
+    font-size: 14px; 
+    font-weight: 200;
+    opacity: 80%; 
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mensajes de error */
+.error-message {
+    font-size: 12px;
+    color: $color-additional-red;
+    margin-top: 5px;
+    display: none; /* Oculto por defecto */
+}
+  
+input.error,
+textarea.error {
+  border-color:  $color-additional-red;
+}
+

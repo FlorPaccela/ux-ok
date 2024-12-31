@@ -1,0 +1,99 @@
+
+a {
+    font-family: $font-button;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: 500;
+    @include font-size($font-size-100,$line-height-default);
+    text-align: center;
+    &-primary{
+        padding: $spacing-200;
+        color: $color-brand-secondary;
+        background-color: $color-brand-primary;
+        border: solid $border-small $color-brand-primary;
+        &:enabled {
+            color: $color-brand-secondary;
+            background-color: $color-brand-primary;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $color-brand-primary;
+            background-color:$color-brand-secondary;
+            border: solid $border-small $color-brand-primary; 
+        }
+        &:focus {
+            color: $color-brand-secondary;
+            background-color: $color-brand-primary;
+            border: solid $border-small $color-additional-white;
+        }       
+        &:disabled {
+            color: $color-primary-800;
+            background-color: $color-primary-200;
+            border: solid $border-small $color-primary-200;
+        }
+    }
+    &-secondary{
+        padding: $spacing-200;
+        color: $color-brand-primary;
+        background-color: $color-brand-secondary;
+        border: solid $border-small $color-brand-primary;
+        &:enabled {
+            color: $color-brand-primary;
+            background-color: $color-brand-secondary;
+            
+        }
+        &:hover {
+            color: $color-brand-secondary;
+            background-color: $color-brand-primary;
+            border: solid $border-small $color-brand-primary;
+        }
+        &:focus {
+            color: $color-brand-primary;
+            background-color: $color-brand-secondary;
+            border: solid $border-small $color-additional-white;
+        }
+        &:disabled {
+            color: $color-primary-800;
+            background-color: $color-primary-200;
+            border: solid $border-small $color-primary-200;
+        }
+    }
+    &-text{
+        padding: 0;
+        color: $color-brand-primary;
+        background-color: none;
+        text-align: start;
+        &:enabled {
+            color: $color-brand-primary;
+        }
+        &:hover {
+            color: $color-primary-200;
+        }
+        &:focus {
+            color: $color-brand-primary;
+            border: solid $border-small $color-primary-200;
+        }
+        &:disabled {
+            color: $color-primary-200;
+        }
+    }
+    &-icon{
+        &-show{
+            &::before {
+                content: icon;
+                display: block;
+            }
+        }
+        &-hidden{
+            &::before {
+                content: icon;
+                display: none;
+            }
+        }
+    }
+}
