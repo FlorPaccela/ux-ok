@@ -1419,7 +1419,7 @@ ul li::marker {
   padding-left: 8px;
 }
 .accordion-item button::before {
-  content: url(../../assets/icon-plus.svg);
+  content: url(../assets/icon-plus.svg);
   margin-right: 8px;
 }
 
