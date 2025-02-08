@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 # Sitemap
-https:https://uxok.com.ar/sitemap.xml
+Sitemap: https://uxok.com.ar/sitemap.xml
