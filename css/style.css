@@ -629,16 +629,16 @@ output {
 }
 
 .services-grid {
-  padding: 28px 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 60px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .services-grid {
-    padding: 0;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 28px 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1522,4 +1522,12 @@ input::placeholder, textarea::placeholder {
 input.error,
 textarea.error {
   border-color: #e33b13;
+}
+
+#gracias {
+  display: none;
+}
+
+#error {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
