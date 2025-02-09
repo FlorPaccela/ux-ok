@@ -17,38 +17,38 @@ $container-xxl: 1440px;
 .container {
     &-xs {
         @include container($container-xs);
-        @include media (mobile) {
+        @include media (tablet) {
             @include container($container-xs);
         }
     }
     &-small {
         @include container($container-small);
-        @include media (mobile) {
+        @include media (tablet) {
             @include container($container-small);
         }
     }
     &-medium {
-        @include container($container-medium);
-        @include media (mobile) {
-            @include container($container-small);
+        @include container($container-small);
+        @include media (tablet) {
+            @include container($container-medium);
         }
     }
     &-large {
-        @include container($container-large);
-        @include media (mobile) {
-            @include container($container-small);
+        @include container($container-small);
+        @include media (tablet) {
+            @include container($container-large);
         }
     }
     &-xl {
-        @include container($container-xl);
-        @include media (mobile) {
-            @include container($container-small);
+        @include container($container-small);
+        @include media (tablet) {
+            @include container($container-xl);
         }
     }
     &-xxl {
-        @include container($container-xxl);
-        @include media (mobile) {
-            @include container($container-small);
+        @include container($container-small);
+        @include media (tablet) {
+            @include container($container-xxl);
         }
     }
     &-custom {

@@ -4,18 +4,18 @@
 $font-size-50: 12px;
 $font-size-75: 14px;
 $font-size-100: 16px;
-$font-size-200: 18px;
-$font-size-300: 20px;
-$font-size-400: 22px;
-$font-size-500: 25px;
-$font-size-600: 28px;
-$font-size-700: 32px;
-$font-size-800: 36px;
-$font-size-900: 40px;
-$font-size-1000: 45px;
-$font-size-1100: 51px;
-$font-size-1200: 58px;
-$font-size-1300: 65px;
+$font-size-200: 16px;
+$font-size-300: 18px;
+$font-size-400: 20px;
+$font-size-500: 22px;
+$font-size-600: 24px;
+$font-size-700: 28px;
+$font-size-800: 32px;
+$font-size-900: 36px;
+$font-size-1000: 40px;
+$font-size-1100: 45px;
+$font-size-1200: 52px;
+$font-size-1300: 60px;
 
 // LINE HEIGHT //
 
@@ -29,9 +29,9 @@ $line-height-large: 1.7;
 
 @mixin font-size($font-size, $line-height){
     font-size: $font-size;
-    line-height: calc($font-size*$line-height);
-    @include media (mobile){
-        font-size: calc($font-size / 1.125);
-        line-height: calc($font-size / 1.125)*$line-height;
+    line-height: calc($font-size * $line-height);
+    @include media (tablet){
+        font-size: calc($font-size * 1.125);
+        line-height: calc($font-size * 1.125) * $line-height;
     }
 }

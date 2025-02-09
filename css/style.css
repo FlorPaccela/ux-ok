@@ -457,7 +457,7 @@ output {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .section-xs {
     width: 100%;
     padding-top: 8px;
@@ -473,7 +473,7 @@ output {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .section-small {
     width: 100%;
     padding-top: 16px;
@@ -489,7 +489,7 @@ output {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .section-medium {
     width: 100%;
     padding-top: 24px;
@@ -505,7 +505,7 @@ output {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .section-large {
     width: 100%;
     padding-top: 40px;
@@ -521,7 +521,7 @@ output {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .section-xl {
     width: 100%;
     padding-top: 80px;
@@ -537,7 +537,7 @@ output {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .section-xxl {
     width: 100%;
     padding-top: 120px;
@@ -555,7 +555,7 @@ output {
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container-xs {
     max-width: 356px;
     margin-right: auto;
@@ -567,7 +567,7 @@ output {
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container-small {
     max-width: 540px;
     margin-right: auto;
@@ -575,49 +575,49 @@ output {
   }
 }
 .container-medium {
-  max-width: 728px;
+  max-width: 540px;
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container-medium {
-    max-width: 540px;
+    max-width: 728px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 .container-large {
-  max-width: 952px;
+  max-width: 540px;
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container-large {
-    max-width: 540px;
+    max-width: 952px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 .container-xl {
-  max-width: 1160px;
+  max-width: 540px;
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container-xl {
-    max-width: 540px;
+    max-width: 1160px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 .container-xxl {
-  max-width: 1440px;
+  max-width: 540px;
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container-xxl {
-    max-width: 540px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -644,40 +644,40 @@ output {
 
 .price-grid {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 80%;
+  flex-direction: column;
   align-items: stretch;
   gap: 40px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .price-grid {
-    width: 60%;
-    flex-direction: column;
-    align-items: stretch;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   gap: 40px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .contact {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .contact-text {
-  width: 40%;
+  width: 100%;
   color: #f6f6f6;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .contact-text {
-    width: 100%;
+    width: 40%;
   }
 }
 .contact-text h3 {
@@ -691,15 +691,15 @@ output {
   line-height: 32px;
 }
 .contact-form {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
   color: #f6f6f6;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .contact-form {
-    width: 100%;
+    width: 60%;
   }
 }
 
@@ -714,10 +714,10 @@ p {
   font-size: 16px;
   line-height: 19.2px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   p {
-    font-size: 14.2222222222px;
-    line-height: 17.0666666667px;
+    font-size: 18px;
+    line-height: 21.6px;
   }
 }
 
@@ -726,13 +726,13 @@ p {
   text-transform: uppercase;
   color: #f6f6f6;
   font-weight: 700;
-  font-size: 65px;
-  line-height: 78px;
+  font-size: 60px;
+  line-height: 72px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .h1 {
-    font-size: 57.7777777778px;
-    line-height: 69.3333333333px;
+    font-size: 67.5px;
+    line-height: 81px;
   }
 }
 
@@ -741,13 +741,13 @@ p {
   text-transform: uppercase;
   color: #f6f6f6;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 36.4px;
+  font-size: 24px;
+  line-height: 31.2px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .h2 {
-    font-size: 24.8888888889px;
-    line-height: 32.3555555556px;
+    font-size: 27px;
+    line-height: 35.1px;
   }
 }
 
@@ -756,78 +756,78 @@ p {
   text-transform: uppercase;
   color: #06E32B;
   font-weight: 300;
-  font-size: 25px;
-  line-height: 32.5px;
+  font-size: 22px;
+  line-height: 28.6px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .h3 {
-    font-size: 22.2222222222px;
-    line-height: 28.8888888889px;
+    font-size: 24.75px;
+    line-height: 32.175px;
   }
 }
 
 .h4 {
   font-family: "Overpass", "Roboto";
   font-weight: 300;
-  font-size: 22px;
-  line-height: 28.6px;
+  font-size: 20px;
+  line-height: 26px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .h4 {
-    font-size: 19.5555555556px;
-    line-height: 25.4222222222px;
+    font-size: 22.5px;
+    line-height: 29.25px;
   }
 }
 
 .h5 {
   font-family: "Overpass", "Roboto";
   font-weight: 300;
-  font-size: 22px;
-  line-height: 28.6px;
+  font-size: 20px;
+  line-height: 26px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .h5 {
-    font-size: 19.5555555556px;
-    line-height: 25.4222222222px;
+    font-size: 22.5px;
+    line-height: 29.25px;
   }
 }
 
 .h6 {
   font-family: "Overpass", "Roboto";
   font-weight: 300;
-  font-size: 22px;
-  line-height: 28.6px;
+  font-size: 20px;
+  line-height: 26px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .h6 {
-    font-size: 19.5555555556px;
-    line-height: 25.4222222222px;
+    font-size: 22.5px;
+    line-height: 29.25px;
   }
 }
 
 .title {
   font-family: "Overpass", "Roboto";
   font-weight: 300;
-  font-size: 25px;
-  line-height: 32.5px;
+  font-size: 22px;
+  line-height: 28.6px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .title {
-    font-size: 22.2222222222px;
-    line-height: 28.8888888889px;
+    font-size: 24.75px;
+    line-height: 32.175px;
   }
 }
 
 .subtitle {
   font-family: "Overpass", "Roboto";
   font-weight: 300;
-  font-size: 18px;
-  line-height: 23.4px;
+  font-size: 16px;
+  line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .subtitle {
-    font-size: 16px;
-    line-height: 20.8px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -837,10 +837,10 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-small-l {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -850,10 +850,10 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-small-r {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -863,10 +863,10 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-small-m {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -876,127 +876,127 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-small-b {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
 .body-medium-l {
   font-family: "Overpass", "Roboto";
   font-weight: 300;
-  font-size: 18px;
-  line-height: 23.4px;
+  font-size: 16px;
+  line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-medium-l {
-    font-size: 16px;
-    line-height: 20.8px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
 .body-medium-r {
   font-family: "Overpass", "Roboto";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23.4px;
+  font-size: 16px;
+  line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-medium-r {
-    font-size: 16px;
-    line-height: 20.8px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
 .body-medium-m {
   font-family: "Overpass", "Roboto";
   font-weight: 500;
-  font-size: 18px;
-  line-height: 23.4px;
+  font-size: 16px;
+  line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-medium-m {
-    font-size: 16px;
-    line-height: 20.8px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
 .body-medium-b {
   font-family: "Overpass", "Roboto";
   font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
+  font-size: 16px;
+  line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-medium-b {
-    font-size: 16px;
-    line-height: 20.8px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
 .body-large-l {
   font-family: "Overpass", "Roboto";
   font-weight: 300;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 23.4px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-large-l {
-    font-size: 17.7777777778px;
-    line-height: 23.1111111111px;
+    font-size: 20.25px;
+    line-height: 26.325px;
   }
 }
 
 .body-large-r {
   font-family: "Overpass", "Roboto";
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 23.4px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-large-r {
-    font-size: 17.7777777778px;
-    line-height: 23.1111111111px;
+    font-size: 20.25px;
+    line-height: 26.325px;
   }
 }
 
 .body-large-m {
   font-family: "Overpass", "Roboto";
   font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 23.4px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-large-m {
-    font-size: 17.7777777778px;
-    line-height: 23.1111111111px;
+    font-size: 20.25px;
+    line-height: 26.325px;
   }
 }
 
 .body-large-b {
   font-family: "Overpass", "Roboto";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 23.4px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-large-b {
-    font-size: 17.7777777778px;
-    line-height: 23.1111111111px;
+    font-size: 20.25px;
+    line-height: 26.325px;
   }
 }
 
 .body-xlarge {
   font-family: "Overpass", "Roboto";
   font-weight: 200;
-  font-size: 22px;
-  line-height: 28.6px;
+  font-size: 20px;
+  line-height: 26px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .body-xlarge {
-    font-size: 19.5555555556px;
-    line-height: 25.4222222222px;
+    font-size: 22.5px;
+    line-height: 29.25px;
   }
 }
 
@@ -1006,10 +1006,10 @@ p {
   font-size: 12px;
   line-height: 15.6px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-small-l {
-    font-size: 10.6666666667px;
-    line-height: 13.8666666667px;
+    font-size: 13.5px;
+    line-height: 17.55px;
   }
 }
 
@@ -1019,10 +1019,10 @@ p {
   font-size: 12px;
   line-height: 15.6px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-small-r {
-    font-size: 10.6666666667px;
-    line-height: 13.8666666667px;
+    font-size: 13.5px;
+    line-height: 17.55px;
   }
 }
 
@@ -1032,10 +1032,10 @@ p {
   font-size: 12px;
   line-height: 15.6px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-small-m {
-    font-size: 10.6666666667px;
-    line-height: 13.8666666667px;
+    font-size: 13.5px;
+    line-height: 17.55px;
   }
 }
 
@@ -1045,10 +1045,10 @@ p {
   font-size: 12px;
   line-height: 15.6px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-small-b {
-    font-size: 10.6666666667px;
-    line-height: 13.8666666667px;
+    font-size: 13.5px;
+    line-height: 17.55px;
   }
 }
 
@@ -1058,10 +1058,10 @@ p {
   font-size: 14px;
   line-height: 18.2px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-medium-l {
-    font-size: 12.4444444444px;
-    line-height: 16.1777777778px;
+    font-size: 15.75px;
+    line-height: 20.475px;
   }
 }
 
@@ -1071,10 +1071,10 @@ p {
   font-size: 14px;
   line-height: 18.2px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-medium-r {
-    font-size: 12.4444444444px;
-    line-height: 16.1777777778px;
+    font-size: 15.75px;
+    line-height: 20.475px;
   }
 }
 
@@ -1084,10 +1084,10 @@ p {
   font-size: 14px;
   line-height: 18.2px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-medium-m {
-    font-size: 12.4444444444px;
-    line-height: 16.1777777778px;
+    font-size: 15.75px;
+    line-height: 20.475px;
   }
 }
 
@@ -1097,10 +1097,10 @@ p {
   font-size: 14px;
   line-height: 18.2px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-medium-b {
-    font-size: 12.4444444444px;
-    line-height: 16.1777777778px;
+    font-size: 15.75px;
+    line-height: 20.475px;
   }
 }
 
@@ -1110,10 +1110,10 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-large-l {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -1123,10 +1123,10 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-large-r {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -1136,10 +1136,10 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-large-m {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -1149,10 +1149,10 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .detail-large-b {
-    font-size: 14.2222222222px;
-    line-height: 18.4888888889px;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 }
 
@@ -1198,10 +1198,10 @@ a {
   line-height: 19.2px;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .button {
-    font-size: 14.2222222222px;
-    line-height: 17.0666666667px;
+    font-size: 18px;
+    line-height: 21.6px;
   }
 }
 .button-primary {
@@ -1286,23 +1286,23 @@ a {
 .hero-banner {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   gap: 40px;
   align-items: center;
   color: #f6f6f6;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hero-banner {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .hero-banner img {
-  width: 50%;
+  width: 100%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hero-banner img {
-    width: 100%;
+    width: 50%;
   }
 }
 .hero-banner-text {
@@ -1324,11 +1324,11 @@ a {
   justify-content: center;
 }
 .title h2 {
-  font-size: 230px;
+  font-size: 80px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .title h2 {
-    font-size: 80px;
+    font-size: 230px;
     line-height: auto;
   }
 }
@@ -1351,7 +1351,7 @@ a {
 }
 
 .price-card {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1363,9 +1363,9 @@ a {
   font-weight: 300;
   color: #f6f6f6;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .price-card {
-    width: auto;
+    width: 100%;
   }
 }
 

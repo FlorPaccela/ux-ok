@@ -17,7 +17,7 @@
 }
 
 .price-card {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -28,8 +28,8 @@
         font-weight: 300;
         color: $color-gray-50;
     }
-    @include media (mobile){
-        width: auto;
+    @include media (tablet){
+        width: 100%;
     }
 }
 
