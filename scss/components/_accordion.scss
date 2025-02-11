@@ -10,10 +10,18 @@
   .accordion-item {
     border-bottom: 1px solid $color-brand-primary;
     button {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
         padding-left: 8px;
         &::before {
             content: url(../assets/icon-plus.svg);
             margin-right: 8px;
+        }
+        p{
+          font-size: 22px;
+          line-height: 26px;
         }
     }    
   }
@@ -40,8 +48,11 @@
   }
   
   .accordion-header:hover {
-    color: $color-brand-secondary;
-    background-color: $color-brand-primary;
+   @include media (tablet){
+    p{
+      color: $color-brand-primary;
+    }
+  }
   }
 
   .accordion-header:focus {
@@ -50,13 +61,13 @@
   
   /* Accordion Content */
   .accordion-content {
-    padding: 16px 16px 24px 16px;
+    padding: 0px 16px 24px 16px;
     display: none;
     background-color:$color-brand-secondary;
     p {
         font-size: 18px;
-        font-weight: 200;
-        line-height: 24px;
+        font-weight: 100;
+        line-height: 26px;
     }
   }
   

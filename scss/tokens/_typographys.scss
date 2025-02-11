@@ -16,7 +16,7 @@ p {
     font-family: $font-title;
     color: $color-gray-50;
     font-weight: 200;
-    @include font-size ($font-size-100, $line-height-default);
+    @include font-size ($font-size-75, $line-height-default);
 }
 
 // HEADINGS //

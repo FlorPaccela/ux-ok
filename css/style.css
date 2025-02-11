@@ -628,82 +628,7 @@ output {
   margin-left: auto;
 }
 
-.services-grid {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 60px;
-}
-@media only screen and (min-width: 768px) {
-  .services-grid {
-    padding: 28px 0;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.price-grid {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 40px;
-}
-@media only screen and (min-width: 768px) {
-  .price-grid {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 40px;
-}
-@media only screen and (min-width: 768px) {
-  .contact {
-    flex-direction: row;
-  }
-}
-.contact-text {
-  width: 100%;
-  color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-@media only screen and (min-width: 768px) {
-  .contact-text {
-    width: 40%;
-  }
-}
-.contact-text h3 {
-  color: #06E32B;
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 8px;
-}
-.contact-text p {
-  font-size: 24px;
-  line-height: 32px;
-}
-.contact-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  color: #f6f6f6;
-}
-@media only screen and (min-width: 768px) {
-  .contact-form {
-    width: 60%;
-  }
-}
-
-main {
+body {
   background-color: #110715;
 }
 
@@ -711,13 +636,13 @@ p {
   font-family: "Overpass", "Roboto";
   color: #f6f6f6;
   font-weight: 200;
-  font-size: 16px;
-  line-height: 19.2px;
+  font-size: 14px;
+  line-height: 16.8px;
 }
 @media only screen and (min-width: 768px) {
   p {
-    font-size: 18px;
-    line-height: 21.6px;
+    font-size: 15.75px;
+    line-height: 18.9px;
   }
 }
 
@@ -1156,10 +1081,22 @@ p {
   }
 }
 
+@keyframes face-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 nav {
   width: 100%;
   padding: 8px 20px;
   background-color: #110715;
+  position: sticky;
+  top: 0;
 }
 nav div {
   width: 100%;
@@ -1416,11 +1353,19 @@ ul li::marker {
   border-bottom: 1px solid #06E32B;
 }
 .accordion-item button {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
   padding-left: 8px;
 }
 .accordion-item button::before {
   content: url(../assets/icon-plus.svg);
   margin-right: 8px;
+}
+.accordion-item button p {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 button::before:hover {
@@ -1442,9 +1387,10 @@ button::before:hover {
   transition: #06E32B 0.3s ease;
 }
 
-.accordion-header:hover {
-  color: #110715;
-  background-color: #06E32B;
+@media only screen and (min-width: 768px) {
+  .accordion-header:hover p {
+    color: #06E32B;
+  }
 }
 
 .accordion-header:focus {
@@ -1453,14 +1399,14 @@ button::before:hover {
 
 /* Accordion Content */
 .accordion-content {
-  padding: 16px 16px 24px 16px;
+  padding: 0px 16px 24px 16px;
   display: none;
   background-color: #110715;
 }
 .accordion-content p {
   font-size: 18px;
-  font-weight: 200;
-  line-height: 24px;
+  font-weight: 100;
+  line-height: 26px;
 }
 
 /* Active styles */
@@ -1524,10 +1470,173 @@ textarea.error {
   border-color: #e33b13;
 }
 
+.services-grid {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 60px;
+}
+@media only screen and (min-width: 768px) {
+  .services-grid {
+    padding: 28px 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.price-grid {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .price-grid {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+  }
+}
+.contact-text {
+  width: 100%;
+  color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-text {
+    width: 40%;
+  }
+}
+.contact-text h3 {
+  color: #06E32B;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.contact-text p {
+  font-size: 18px;
+  line-height: 22px;
+}
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #f6f6f6;
+}
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    width: 60%;
+  }
+}
+
 #gracias {
   display: none;
 }
 
 #error {
   display: none;
+}
+
+.thanks {
+  padding: 40px 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: face-in 0.5s ease-out forwards;
+}
+@media only screen and (min-width: 768px) {
+  .thanks {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+}
+.thanks img {
+  width: 40%;
+}
+@media only screen and (min-width: 768px) {
+  .thanks img {
+    width: 30%;
+  }
+}
+.thanks-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .thanks-text {
+    align-items: start;
+  }
+}
+.thanks-text a {
+  width: 300px;
+}
+
+.error {
+  padding: 40px 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: face-in 0.5s ease-out forwards;
+}
+@media only screen and (min-width: 768px) {
+  .error {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+}
+.error img {
+  width: 40%;
+}
+@media only screen and (min-width: 768px) {
+  .error img {
+    width: 30%;
+  }
+}
+.error-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .error-text {
+    align-items: start;
+  }
+}
+.error-text a {
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */
