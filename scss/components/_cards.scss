@@ -1,8 +1,22 @@
 
 .services-card {
     display: flex;
+    padding: $spacing-800;
     flex-direction: column;
-    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    border: 1px solid $color-gray-200;
+    background: rgba(17, 7, 21, 0.50);
+    backdrop-filter: blur(5px);
+    &-heading{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        align-items: center;
+        gap: 16px;
+    }
     &-tag {
         display: flex;
         flex-direction: row;
@@ -12,8 +26,14 @@
 }
 
 .tag {
-    padding: $spacing-100 ;
-    border: solid 1px $color-gray-50;
+    display: flex;
+    padding: 8px 16px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: $color-secondary-800;
+    backdrop-filter: blur(2px);
 }
 
 .price-card {

@@ -679,7 +679,7 @@ p {
 .h3 {
   font-family: "Overpass", "Roboto";
   text-transform: uppercase;
-  color: #06E32B;
+  color: #06E369;
   font-weight: 300;
   font-size: 22px;
   line-height: 28.6px;
@@ -1112,7 +1112,7 @@ nav div img {
 footer {
   width: 100%;
   padding: 16px;
-  background-color: #06E32B;
+  background-color: #06E369;
   text-align: center;
 }
 footer p {
@@ -1144,72 +1144,72 @@ a {
 .button-primary {
   padding: 12px;
   color: #110715;
-  background-color: #06E32B;
-  border: solid 1px #06E32B;
+  background-color: #06E369;
+  border: solid 1px #06E369;
 }
 .button-primary:enabled {
   color: #110715;
-  background-color: #06E32B;
+  background-color: #06E369;
 }
 .button-primary:hover {
   text-decoration: none;
-  color: #06E32B;
+  color: #06E369;
   background-color: #110715;
-  border: solid 1px #06E32B;
+  border: solid 1px #06E369;
 }
 .button-primary:focus {
   color: #110715;
-  background-color: #06E32B;
+  background-color: #06E369;
   border: solid 1px #ffffff;
 }
 .button-primary:disabled {
-  color: #08731c;
-  background-color: #b1ffbd;
-  border: solid 1px #b1ffbd;
+  color: #124B23;
+  background-color: #00DC62;
+  border: solid 1px #00DC62;
 }
 .button-secondary {
   padding: 12px;
-  color: #06E32B;
+  color: #06E369;
   background-color: #110715;
-  border: solid 1px #06E32B;
+  border: solid 1px #06E369;
 }
 .button-secondary:enabled {
-  color: #06E32B;
+  color: #06E369;
   background-color: #110715;
 }
 .button-secondary:hover {
   color: #110715;
-  background-color: #06E32B;
-  border: solid 1px #06E32B;
+  background-color: #06E369;
+  border: solid 1px #06E369;
 }
 .button-secondary:focus {
-  color: #06E32B;
+  color: #06E369;
   background-color: #110715;
   border: solid 1px #ffffff;
 }
 .button-secondary:disabled {
-  color: #08731c;
-  background-color: #b1ffbd;
-  border: solid 1px #b1ffbd;
+  color: #124B23;
+  background-color: #00DC62;
+  border: solid 1px #00DC62;
 }
 .button-text {
   padding: 0;
-  color: #06E32B;
+  color: #06E369;
   background-color: none;
   text-align: start;
 }
 .button-text:enabled {
-  color: #06E32B;
+  color: #06E369;
 }
 .button-text:hover {
-  color: #b1ffbd;
+  color: #00DC62;
 }
 .button-text:focus {
-  color: #06E32B;
-  border: solid 1px #b1ffbd;
+  color: #06E369;
+  border: solid 1px #00DC62;
 }
 .button-text:disabled {
-  color: #b1ffbd;
+  color: #00DC62;
 }
 .button-icon-show::before {
   content: icon;
@@ -1220,6 +1220,17 @@ a {
   display: none;
 }
 
+.icon {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d1d1;
+  background: #1C0C22;
+}
+.icon img {
+  height: 48px;
+  width: 48px;
+}
+
 .hero-banner {
   width: 100%;
   display: flex;
@@ -1228,9 +1239,24 @@ a {
   gap: 40px;
   align-items: center;
   color: #f6f6f6;
+  background-image: url(../../assets/Backgound-banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (min-width: 768px) {
   .hero-banner {
+    flex-direction: row;
+  }
+}
+.hero-banner-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .hero-banner-content {
     flex-direction: row;
   }
 }
@@ -1254,14 +1280,20 @@ a {
 
 .title {
   width: 100%;
-  height: auto;
-  padding: 120px;
+  padding: 8px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+@media only screen and (min-width: 768px) {
+  .title {
+    padding: 120px;
+  }
+}
 .title h2 {
   font-size: 80px;
+  font-weight: 400;
+  line-height: normal;
 }
 @media only screen and (min-width: 768px) {
   .title h2 {
@@ -1269,10 +1301,32 @@ a {
     line-height: auto;
   }
 }
+.title-gradient {
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #FAFAFA -20%, #110715 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .services-card {
   display: flex;
+  padding: 24px;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  border: 1px solid #d1d1d1;
+  background: rgba(17, 7, 21, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.services-card-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-items: center;
   gap: 16px;
 }
 .services-card-tag {
@@ -1283,8 +1337,15 @@ a {
 }
 
 .tag {
-  padding: 8px;
-  border: solid 1px #f6f6f6;
+  display: flex;
+  padding: 8px 16px 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: #2B1B32;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .price-card {
@@ -1294,7 +1355,7 @@ a {
   align-items: start;
   gap: 40px;
   padding: 24px;
-  border: solid 1px #06E32B;
+  border: solid 1px #06E369;
 }
 .price-card h4 {
   font-weight: 300;
@@ -1331,7 +1392,7 @@ ul li {
   color: #f6f6f6;
 }
 ul li::marker {
-  color: #06E32B;
+  color: #06E369;
 }
 
 .checklist {
@@ -1350,7 +1411,7 @@ ul li::marker {
 
 /* Accordion Item */
 .accordion-item {
-  border-bottom: 1px solid #06E32B;
+  border-bottom: 1px solid #06E369;
 }
 .accordion-item button {
   display: flex;
@@ -1384,12 +1445,12 @@ button::before:hover {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: #06E32B 0.3s ease;
+  transition: #06E369 0.3s ease;
 }
 
 @media only screen and (min-width: 768px) {
   .accordion-header:hover p {
-    color: #06E32B;
+    color: #06E369;
   }
 }
 
@@ -1431,14 +1492,14 @@ input, textarea {
   color: #f6f6f6;
   padding: 16px;
   background-color: #110715;
-  border: solid 1px #06E32B;
+  border: solid 1px #06E369;
   border-radius: 0;
 }
 input:focus, textarea:focus {
   font-size: 14px;
   font-weight: 200;
   outline: none; /* Quitar el borde predeterminado */
-  border-color: #06E32B;
+  border-color: #06E369;
   box-shadow: none;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {
@@ -1471,17 +1532,26 @@ textarea.error {
 }
 
 .services-grid {
+  position: relative;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 60px;
+  grid-row-gap: 24px;
 }
 @media only screen and (min-width: 768px) {
   .services-grid {
     padding: 28px 0;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 60px;
   }
+}
+.services-grid-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 13, 74, 0.2);
+  filter: blur(25px);
 }
 
 .price-grid {
@@ -1523,7 +1593,7 @@ textarea.error {
   }
 }
 .contact-text h3 {
-  color: #06E32B;
+  color: #06E369;
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 8px;
