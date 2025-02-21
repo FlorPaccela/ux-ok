@@ -1,13 +1,16 @@
 .price-grid {
+    padding-top: 24px;
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     @include media (tablet){
       width: 100%;
       flex-direction: row;
       justify-content: space-between;
+      gap: 16px;
     }
   }
   

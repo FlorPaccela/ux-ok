@@ -6,9 +6,9 @@
     flex-direction: row;
     justify-content: center;
     @include media (tablet){
-        padding: $spacing-2000;
+        padding: $spacing-1000;
     }
-    h2 {
+    .h2 {
         font-size: 80px;
         font-weight: 400;
         line-height: normal;
@@ -19,9 +19,28 @@
     }
     &-gradient{
         flex-shrink: 0;
-        background: linear-gradient(180deg, #FAFAFA -20%, #110715 70%);
+        background: linear-gradient(180deg, #FAFAFA -10%, #110715 80%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    &-regular{
+        font-size: 54px;
+        font-weight: 200;
+        line-height: normal;
+        @include media (tablet){
+            font-size: 80px;
+            line-height: auto;
+        }
+    }
+    &-small{
+        font-size: 44px;
+        font-weight: 200;
+        line-height: normal;
+        @include media (tablet){
+            font-size: 54px;
+            line-height: auto;
+        }
+    }
+    
 }

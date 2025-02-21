@@ -8,7 +8,7 @@
     @include media (tablet){
       padding: 28px 0;
       grid-template-columns: repeat(3, 1fr);
-      grid-row-gap: 60px;
+      grid-row-gap: 40px;
     }
     &-bg{
       position: absolute;

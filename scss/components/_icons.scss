@@ -2,8 +2,9 @@
 .icon{
     padding: $spacing-200;
     border-radius: $rounding-regular;
-    border: 1px solid $color-gray-200;
-    background: $color-secondary-900;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    background: rgba(28, 12, 34, 0.1);
+    //background: $color-secondary-900;
     img{
         height: 48px;
         width: 48px;
