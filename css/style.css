@@ -1240,9 +1240,10 @@ a {
   gap: 40px;
   align-items: center;
   color: #f6f6f6;
-  background-image: url(../../assets/Backgound-banner.webp);
+  background-image: url(../../assets/backgound-banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 @media only screen and (min-width: 768px) {
   .hero-banner {

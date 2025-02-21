@@ -7,9 +7,10 @@
     gap: 40px;
     align-items: center;
     color: $color-gray-50;
-    background-image: url(../../assets/Backgound-banner.webp);
+    background-image: url(../../assets/backgound-banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     @include media (tablet){
         flex-direction: row;
     }
