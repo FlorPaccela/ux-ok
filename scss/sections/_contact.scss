@@ -16,13 +16,15 @@
         width: 40%;
       }
       h3 {
-        color: $color-brand-primary;
-        font-size: 20px;
-        font-weight: 300;
+        color: $color-gray-50;
+        font-size: 32px;
+        line-height: normal;
+        font-weight: 400;
         margin-bottom: 8px;
       }
       p {
         font-size: 18px;
+        font-weight: 100;
         line-height: 22px;
       }
     }

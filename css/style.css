@@ -637,12 +637,12 @@ p {
   color: #f6f6f6;
   font-weight: 200;
   font-size: 14px;
-  line-height: 16.8px;
+  line-height: 14px;
 }
 @media only screen and (min-width: 768px) {
   p {
     font-size: 15.75px;
-    line-height: 18.9px;
+    line-height: 15.75px;
   }
 }
 
@@ -651,13 +651,13 @@ p {
   text-transform: uppercase;
   color: #f6f6f6;
   font-weight: 700;
-  font-size: 60px;
-  line-height: 72px;
+  font-size: 52px;
+  line-height: 52px;
 }
 @media only screen and (min-width: 768px) {
   .h1 {
-    font-size: 67.5px;
-    line-height: 81px;
+    font-size: 58.5px;
+    line-height: 58.5px;
   }
 }
 
@@ -1131,19 +1131,20 @@ a {
 
 .button {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 19.2px;
+  line-height: 16px;
   text-align: center;
+  border-radius: 8px;
+  padding: 16px 12px 12px;
 }
 @media only screen and (min-width: 768px) {
   .button {
     font-size: 18px;
-    line-height: 21.6px;
+    line-height: 18px;
   }
 }
 .button-primary {
-  padding: 12px;
   color: #110715;
   background-color: #06E369;
   border: solid 1px #06E369;
@@ -1169,7 +1170,6 @@ a {
   border: solid 1px #00DC62;
 }
 .button-secondary {
-  padding: 12px;
   color: #06E369;
   background-color: #110715;
   border: solid 1px #06E369;
@@ -1255,14 +1255,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 32px;
 }
 @media only screen and (min-width: 768px) {
   .hero-banner-content {
     flex-direction: row;
+    gap: 0px;
   }
 }
 .hero-banner img {
-  width: 100%;
+  width: 320px;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   .hero-banner img {
@@ -1273,7 +1276,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 .hero-banner-text a {
   width: 300px;
@@ -1292,7 +1295,7 @@ a {
   }
 }
 .title .h2 {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 400;
   line-height: normal;
 }
@@ -1302,15 +1305,22 @@ a {
     line-height: auto;
   }
 }
-.title-gradient {
+.title-gradient-primary {
   flex-shrink: 0;
   background: linear-gradient(180deg, #FAFAFA -10%, #110715 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.title-gradient-secondary {
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #FAFAFA 25%, #110715 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .title-regular {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 200;
   line-height: normal;
 }
@@ -1321,7 +1331,7 @@ a {
   }
 }
 .title-small {
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 200;
   line-height: normal;
 }
@@ -1339,7 +1349,7 @@ a {
   justify-content: start;
   align-items: flex-start;
   gap: 24px;
-  border: 1px solid rgba(250, 250, 250, 0.1);
+  border: 2px solid rgba(250, 250, 250, 0.1);
   border-radius: 8px;
   background: rgba(17, 7, 21, 0.5);
   -webkit-backdrop-filter: blur(5px);
@@ -1379,7 +1389,7 @@ a {
   gap: 24px;
   padding: 24px;
   border-radius: 8px;
-  border: 1px solid rgba(250, 250, 250, 0.1);
+  border: 2px solid rgba(250, 250, 250, 0.1);
   background: radial-gradient(65.2% 67.63% at 54.46% 135.19%, rgba(6, 227, 105, 0.5) 0%, rgba(17, 7, 21, 0.5) 100%);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -1555,14 +1565,14 @@ input, textarea {
   color: #f6f6f6;
   padding: 16px;
   background-color: #110715;
-  border: solid 1px #06E369;
-  border-radius: 0;
+  border: 2px solid rgba(250, 250, 250, 0.1);
+  border-radius: 8px;
 }
 input:focus, textarea:focus {
   font-size: 14px;
   font-weight: 200;
   outline: none; /* Quitar el borde predeterminado */
-  border-color: #06E369;
+  border-color: #00DC62;
   box-shadow: none;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {
@@ -1659,13 +1669,15 @@ textarea.error {
   }
 }
 .contact-text h3 {
-  color: #06E369;
-  font-size: 20px;
-  font-weight: 300;
+  color: #f6f6f6;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 .contact-text p {
   font-size: 18px;
+  font-weight: 100;
   line-height: 22px;
 }
 .contact-form {

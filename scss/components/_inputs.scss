@@ -11,19 +11,19 @@ input, textarea {
   color: $color-gray-50;
   padding: 16px;
   background-color: $color-brand-secondary;
-  border: solid 1px $color-brand-primary;
-  border-radius: 0;
+  border: 2px solid rgba(250, 250, 250, 0.1);
+  border-radius: 8px;
   &:focus {
     font-size: 14px;
     font-weight: 200;
     outline: none; /* Quitar el borde predeterminado */
-    border-color: $color-brand-primary;
+    border-color: $color-primary-200;
     box-shadow: none;
   }
   &::placeholder{ 
     font-size: 14px; 
     font-weight: 200;
-    opacity: 80%; 
+    opacity: 80%;
   }
 }
 

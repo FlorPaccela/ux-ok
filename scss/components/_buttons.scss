@@ -8,11 +8,12 @@ a {
 
 .button {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     @include font-size($font-size-100,$line-height-default);
     text-align: center;
+    border-radius: 8px;
+    padding: 16px 12px 12px;
     &-primary{
-        padding: $spacing-200;
         color: $color-brand-secondary;
         background-color: $color-brand-primary;
         border: solid $border-small $color-brand-primary;
@@ -38,7 +39,6 @@ a {
         }
     }
     &-secondary{
-        padding: $spacing-200;
         color: $color-brand-primary;
         background-color: $color-brand-secondary;
         border: solid $border-small $color-brand-primary;

@@ -9,7 +9,7 @@
         padding: $spacing-1000;
     }
     .h2 {
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 400;
         line-height: normal;
         @include media (tablet){
@@ -17,15 +17,22 @@
             line-height: auto;
         }
     }
-    &-gradient{
+    &-gradient-primary{
         flex-shrink: 0;
         background: linear-gradient(180deg, #FAFAFA -10%, #110715 80%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    &-gradient-secondary{
+        flex-shrink: 0;
+        background: linear-gradient(180deg, #FAFAFA 25%, #110715 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     &-regular{
-        font-size: 54px;
+        font-size: 48px;
         font-weight: 200;
         line-height: normal;
         @include media (tablet){
@@ -34,7 +41,7 @@
         }
     }
     &-small{
-        font-size: 44px;
+        font-size: 36px;
         font-weight: 200;
         line-height: normal;
         @include media (tablet){
@@ -42,5 +49,4 @@
             line-height: auto;
         }
     }
-    
 }
