@@ -1,0 +1,13 @@
+
+.method-grid{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    @include media (tablet){
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+    }
+}

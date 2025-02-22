@@ -96,3 +96,36 @@
         height: 410px;
     }  
 }
+
+.method-card{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    &-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        span{
+            font-size: 22px;
+            font-weight: 600;
+            color: $color-brand-primary;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 200;
+            color: $color-brand-primary;
+        }
+    }
+    p{
+        font-size: 18px;
+        font-weight: 200;
+        color: $color-gray-200;
+        text-align: center;
+    }
+    
+}
