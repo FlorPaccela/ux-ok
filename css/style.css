@@ -1448,9 +1448,9 @@ a {
 .method-card {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  justify-content: start;
+  align-items: start;
   gap: 8px;
 }
 .method-card-title {
@@ -1474,7 +1474,7 @@ a {
   font-size: 18px;
   font-weight: 200;
   color: #d1d1d1;
-  text-align: center;
+  text-align: start;
 }
 
 ul {
