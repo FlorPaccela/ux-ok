@@ -14,6 +14,7 @@ input, textarea {
   border: 2px solid rgba(250, 250, 250, 0.1);
   border-radius: 8px;
   &:focus {
+    color: $color-gray-50;
     font-size: 14px;
     font-weight: 200;
     outline: none; /* Quitar el borde predeterminado */
@@ -43,5 +44,14 @@ input, textarea {
 input.error,
 textarea.error {
   border-color:  $color-additional-red;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 2px rgba(250, 250, 250, 0.1), /* Simula el borde */
+  0 0 0 30px $color-brand-secondary inset !important; /* Color de fondo */
+  -webkit-text-fill-color: $color-gray-50 !important;
+  border: none !important; /* Evita conflictos */
 }
 

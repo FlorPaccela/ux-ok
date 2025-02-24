@@ -1107,7 +1107,7 @@ nav div {
 }
 nav div img {
   height: 40px;
-  width: auto;
+  width: 40px;
 }
 
 footer {
@@ -1240,7 +1240,7 @@ a {
   gap: 40px;
   align-items: center;
   color: #f6f6f6;
-  background-image: url(../../assets/backgound-banner.webp);
+  background-image: url(../../assets/backgound-banner-mobile.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1248,6 +1248,10 @@ a {
 @media only screen and (min-width: 768px) {
   .hero-banner {
     flex-direction: row;
+    background-image: url(../../assets/backgound-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
 }
 .hero-banner-content {
@@ -1602,6 +1606,7 @@ input, textarea {
   border-radius: 8px;
 }
 input:focus, textarea:focus {
+  color: #f6f6f6;
   font-size: 14px;
   font-weight: 200;
   outline: none; /* Quitar el borde predeterminado */
@@ -1635,6 +1640,14 @@ input::placeholder, textarea::placeholder {
 input.error,
 textarea.error {
   border-color: #e33b13;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 2px rgba(250, 250, 250, 0.1), 0 0 0 30px #110715 inset !important; /* Color de fondo */
+  -webkit-text-fill-color: #f6f6f6 !important;
+  border: none !important; /* Evita conflictos */
 }
 
 .method-grid {
