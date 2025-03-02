@@ -1,14 +1,10 @@
 
 // FAMILY FONTS //
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
-
-$font-title: 'Overpass', 'Roboto';
-$font-body: 'Overpass', 'Roboto';
-$font-detail: 'Overpass', 'Roboto';
-$font-button: 'Overpass', 'Roboto';
-$font-link: 'Overpass', 'Roboto';
+$font-title: 'Overpass';
+$font-body: 'Overpass';
+$font-detail: 'Overpass';
+$font-button: 'Overpass';
+$font-link: 'Overpass';
 
 // PARAGRAPHS //
 
@@ -26,7 +22,7 @@ p {
     text-transform: uppercase;
     color: $color-gray-50;
     font-weight: 700;
-    @include font-size ($font-size-1200, $line-height-default);
+    @include font-size ($font-size-1000, $line-height-default);
 }
 
 .h2 {
