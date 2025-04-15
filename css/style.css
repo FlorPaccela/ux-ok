@@ -1166,7 +1166,7 @@ a {
   border: solid 1px #ffffff;
 }
 .button-primary:disabled {
-  color: #124B23;
+  color: #19592D;
   background-color: #00DC62;
   border: solid 1px #00DC62;
 }
@@ -1190,7 +1190,7 @@ a {
   border: solid 1px #ffffff;
 }
 .button-secondary:disabled {
-  color: #124B23;
+  color: #19592D;
   background-color: #00DC62;
   border: solid 1px #00DC62;
 }
