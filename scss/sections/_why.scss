@@ -1,0 +1,44 @@
+
+.why-ux-ok {
+    background-color: #040404; 
+    &-container {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+        @include media (tablet){
+            flex-direction: row;
+        
+        }
+    }
+    img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        color: $color-gray-50;
+        padding: 0 16px;
+        gap: 16px;
+        .h2 {
+            text-transform: none;
+        }
+        &-item {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            justify-content: start;
+            align-items: start;
+            img {
+                width: 32px;
+                height: 32px;
+            }
+            p {
+                line-height: 20px;
+            }
+        }
+    }
+}

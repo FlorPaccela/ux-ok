@@ -12,7 +12,6 @@ a {
     @include font-size($font-size-100,$line-height-default);
     text-align: center;
     border-radius: 8px;
-    padding: 16px 12px 12px;
     &-primary{
         color: $color-brand-secondary;
         background-color: $color-brand-primary;
@@ -82,18 +81,20 @@ a {
             color: $color-primary-200;
         }
     }
-    &-icon{
-        &-show{
-            &::before {
-                content: icon;
-                display: block;
-            }
-        }
-        &-hidden{
-            &::before {
-                content: icon;
-                display: none;
-            }
-        }
+    &-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px; 
+    }
+    &-small {
+        padding: 12px 18px;
+    }
+    &-medium {
+        padding: 12px 24px;
+    }
+    &-large {
+        padding: 18px 48px;
     }
 }

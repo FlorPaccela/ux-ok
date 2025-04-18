@@ -1,14 +1,21 @@
 .services-grid {
     position: relative;
     padding: 0;
-    display: grid ;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 24px;
-    @include media (tablet){
+    &-primary {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &-secondary {
+      display: grid ;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 24px;
+      @include media (tablet){
       padding: 28px 0;
       grid-template-columns: repeat(3, 1fr);
       grid-row-gap: 40px;
+    }
     }
     &-bg{
       position: absolute;
@@ -18,3 +25,17 @@
       filter: blur(25px);
     }
   }
+
+.carrousel-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: $color-brand-primary;
+  padding: 24px 20px;
+  span{
+    font-family: $font-title;
+    font-size: $font-size-600;
+  }
+}

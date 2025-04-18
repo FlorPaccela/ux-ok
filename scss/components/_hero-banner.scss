@@ -40,11 +40,20 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        align-items: start;
         @include media (tablet){
             width: 50%;
         }
+        span {
+            color: $color-brand-primary;
+        }
         a {
-            width: 300px;
+            
+            img {
+                width: 24px;
+                height: 24px;
+                color: aqua;
+            }
         }
     }
 }

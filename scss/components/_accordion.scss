@@ -8,7 +8,7 @@
   
   /* Accordion Item */
   .accordion-item {
-    border-bottom: 1px solid $color-brand-primary;
+    border-bottom: 2px solid rgba(250, 250, 250, 0.1);;
     button {
         display: flex;
         flex-direction: row;
@@ -18,6 +18,8 @@
         &::before {
             content: url(../assets/icon-plus.svg);
             margin-right: 8px;
+            width: 24px;
+            height: 24px;
         }
         p{
           font-size: 22px;

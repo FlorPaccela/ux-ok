@@ -2,19 +2,18 @@
 // FAMILY FONTS //
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-
-$font-title: 'Overpass';
-$font-body: 'Overpass';
-$font-detail: 'Overpass';
-$font-button: 'Overpass';
-$font-link: 'Overpass';
+$font-title: 'Space Grotesk';
+$font-body: 'Roboto';
+$font-detail: 'Roboto';
+$font-button: 'Space Grotesk';
+$font-link: 'Space Grotesk';
 
 // PARAGRAPHS //
 
 p {
-    font-family: $font-title;
+    font-family: $font-body;
     color: $color-gray-50;
     font-weight: 200;
     @include font-size ($font-size-75, $line-height-default);
@@ -24,26 +23,24 @@ p {
 
 .h1 {
     font-family: $font-title;
-    text-transform: uppercase;
     color: $color-gray-50;
-    font-weight: 700;
+    font-weight: 500;
     @include font-size ($font-size-1000, $line-height-default);
 }
 
 .h2 {
     font-family: $font-title;
-    text-transform: uppercase;
     color: $color-gray-50;
-    font-weight: 700;
-    @include font-size ($font-size-600, $line-height-small);
+    font-weight: 300;
+    @include font-size ($font-size-1000, $line-height-small);
 }
 
 .h3 {
     font-family: $font-title;
     text-transform: uppercase;
-    color: $color-brand-primary;
-    font-weight: 300;
-    @include font-size ($font-size-500,  $line-height-small);
+    color: $color-gray-50;
+    font-weight: 200;
+    @include font-size ($font-size-600,  $line-height-small);
 }
 
 .h4 {

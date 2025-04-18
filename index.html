@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
     <link rel="canonical" href="https://uxok.com.ar/" />
     <title>UX OK | Partner Studio</title>
@@ -27,180 +27,191 @@
     <nav>
         <div class="container-xl">
             <img src="assets/logo-verde.webp" alt="Logo de UX OK">
-            <a class="button button-primary" href="#form">Trabajemos juntos</a>
+            <div class="menu">
+                <a href="#" class="menu-item">Servicios</a>
+                <a class="button button-primary button-small" href="#form">Contacto</a>
+            </div>
         </div>
     </nav>
     
     <main>
-        <section class="section-xs hero-banner">
+        <section class="section-small hero-banner">
             <div class="container-xl hero-banner-content">
                 <img src="assets/logo-verde.webp" alt="Logo de UX OK">
                 <div class="hero-banner-text">
-                    <h1 class="h1">UX/UI Partner Studio</h1>
-                    <!--<p class="body-xlarge">Somos profesionales del diseño centramos en la comunicación interdisciplinaria, preparamos la documentación necesaria para equipos de desarrollo y trabajamos en conjunto para la mejor implementación del mismo.</p>-->
-                    <p class="body-xlarge">¿Necesitas un UX Team en tu empresa? ¡Estamos listos para sumarnos! Somos profesionales del diseño centrados en la comunicación interdisciplinaria.</p>
-                    <a class="button button-secondary" href="#form">trabajemos juntos</a>
+                    <h1 class="h1">Agencia de <span>Diseño Web</span> para Potenciar tu Negocio Digital</h1>
+                    <a class="button button-secondary button-icon button-large" href="#form">Hablemos de tu proyecto<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M5 5h14v14h-2V8.414L5.707 19.707l-1.414-1.414L15.586 7H5V5z"/>
+                    </svg></a> 
                 </div>
             </div> 
         </section>
 
-        <!-- <section class="section-large container-xl"> 
-            <div>
-                <h2 class="h2">Beneficios de tenernos como Partner</h2>
-            </div>
-            <div>
-                <p class="body-xlarge"><b>Equipo listo para trabajar:</b> Nos sumamos a tu agencia sin procesos largos ni burocracia.</p>
-                <p class="body-xlarge"><b>Más servicios, más clientes:</b> Amplía tu oferta sin invertir en recursos internos.</p>
-                <p class="body-xlarge"><b>Flujo de trabajo ágil:</b> Colaboramos con tu equipo de marketing, branding y desarrollo.</p>
-                <p class="body-xlarge"><b>UX/UI estratégico:</b> Diseños que convierten, mejoran la experiencia y fidelizan usuarios.</p>
-                <p class="body-xlarge"><b>Sin costos fijos:</b> Paga solo por lo que necesitas, cuando lo necesitas.</p>
-            </div>
+        <!--<section class="carrousel-services">
+            <span>Web</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+                </svg>
+            <span>UX/UI</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+              </svg>
+            <span>Aplicaciones</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+              </svg>
+            <span>E-commerce</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+              </svg>
+            <span>SEO</span>
         </section>-->
 
-        <section class="section-large container-xl">
-            <div class="title title-gradient-primary">
-                <h2 class="h2">servicios</h2>
+        <section class="section-xl container-xl">
+            <div class="title">
+                <h2 class="h2">Nuestros Servicios</h2>
             </div>
-            <div class="services-grid">
+            <div class="services-grid services-grid-primary">
                 <div class="services-grid-bg"></div>
-                <div class="services-card">
+
+                <a href="#">
+                <div class="services-card services-card-primary">
+                    <div class="services-card-content">
                     <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/search.webp" alt="icono de lupa buscando usuarios"></div>
-                        <h3 class="h3">Research</h3>
+                        <span class="number">1.</span>
+                        <h3 class="h3">Diseño Web</h3>     
                     </div>
-                    <p class="body-small-l">Estudiamos y planificamos la mejor manera de conectar con tus usuarios, garantizando una experiencia relevante y funcional.</p>
                     <div class="services-card-tag">
-                        <!--<div class="tag"> <p class="detail-small-l">INVESTIGACIÓN DE USUARIOS</p></div>-->
-                       <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
-                    </div>                      
-                </div>
-                <div class="services-card">
-                    <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/ux.webp" alt="icono de un browser con un check dentro"></div>
-                        <h3 class="h3">UX Design</h3>
+                        <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                        <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                        <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
                     </div>
-                    <p class="body-small-l ">Definimos el recorrido óptimo de los usuarios en cada paso de la experiencia digital, asegurando que encuentren lo que necesitan de forma rápida y eficiente.</p>
-                    <div class="services-card-tag">
-                        <!--<div class="tag"> <p class="detail-small-l">USER PERSONA</p></div>-->
-                        <div class="tag"><p class="detail-small-l">USER FLOWS</p></div>
-                         <!--<div class="tag"> <p class="detail-small-l">ESTRUCTURA DE LA INFORMACIÓN</p></div>-->
-                        <div class="tag"><p class="detail-small-l">WIREFRAMES</p></div>
-                    </div>                      
-                </div>
-                <div class="services-card">
-                    <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/ui.webp" alt="icono de un browser con un ojo observando dentro"></div>
-                        <h3 class="h3">UI Design</h3>
                     </div>
-                    <p class="body-small-l ">Damos vida a tu marca a través de un diseño visual atractivo y coherente que facilita la navegación y enriquece la experiencia del usuario.</p>
-                    <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">DESIGN SYSTEM</p></div>
-                       <div class="tag"><p class="detail-small-l">PROTOTIPADO</p></div>
-                    </div>                      
+                    <a class="button button-secondary button-icon button-medium" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                    <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                    </svg>
+                    </a>                    
                 </div>
-                <div class="services-card">
-                    <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/testing.webp" alt="icono de un tubo de ensayo"></div>
-                        <h3 class="h3">User testing</h3>
+                </a>
+
+                <a href="#">
+                    <div class="services-card services-card-primary">
+                        <div class="services-card-content">
+                        <div class="services-card-heading">
+                            <span class="number">2.</span>
+                            <h3 class="h3">Diseño UX/UI</h3>     
+                        </div>
+                        <div class="services-card-tag">
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                        </div>
+                        </div>
+                        <a class="button button-secondary button-icon button-medium" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        </svg>
+                        </a>                    
                     </div>
-                    <p class="body-small-l ">Validamos que cada decisión de diseño funcione para tu audiencia, ajustando donde sea necesario para perfeccionar la experiencia.</p>
-                    <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">PRUEBAS DE USABILIDAD</p></div>
-                    </div>                      
-                </div>
-                <div class="services-card">
-                    <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/handoff.webp" alt="icono de un checklist"></div>
-                        <h3 class="h3">Handoff</h3>
+                </a>
+                
+                <a href="#">
+                    <div class="services-card services-card-primary">
+                        <div class="services-card-content">
+                        <div class="services-card-heading">
+                            <span class="number">3.</span>
+                            <h3 class="h3">Diseño de Aplicaciones</h3>     
+                        </div>
+                        <div class="services-card-tag">
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                        </div>
+                        </div>
+                        <a class="button button-secondary button-icon button-medium" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        </svg>
+                        </a>                    
                     </div>
-                    <p class="body-small-l ">Compartimos documentos con todas las especificaciones necesarias para el desarrollo de cada componente y su implementación en el diseño.</p>
-                    <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">ARCHIVO FIGMA DEV MODE</p></div>
-                    </div>                      
-                </div>
-                <div class="services-card">
-                    <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/qa.webp" alt="icono de un los signos de mayor y menor en la mira"></div>
-                        <h3 class="h3">QA de implementación</h3>
+                </a>
+    
+                <a href="#">
+                    <div class="services-card services-card-primary">
+                        <div class="services-card-content">
+                        <div class="services-card-heading">
+                            <span class="number">4.</span>
+                            <h3 class="h3">Diseño de E-commerce</h3>     
+                        </div>
+                        <div class="services-card-tag">
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                        </div>
+                        </div>
+                        <a class="button button-secondary button-icon button-medium" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        </svg>
+                        </a>                    
                     </div>
-                    <p class="body-small-l ">Colaboramos estrechamente con el equipo de desarrollo para garantizar que cada detalle del diseño se implemente con precisión.</p>
-                    <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">TRES REVISIONES</p></div>
-                    </div>                      
-                </div>
-            </div>
+                </a>
+
+                <a href="#">
+                    <div class="services-card services-card-primary">
+                        <div class="services-card-content">
+                        <div class="services-card-heading">
+                            <span class="number">5.</span>
+                            <h3 class="h3">Auditoria SEO</h3>     
+                        </div>
+                        <div class="services-card-tag">
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                            <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
+                        </div>
+                        </div>
+                        <a class="button button-secondary button-icon button-medium" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"/>
+                        </svg>
+                        </a>                    
+                    </div>
+                </a>  
         </section>
 
-        <section class="section-large container-xl">
-            <div class="title title-gradient-secondary">
-                <h2 class="title-regular">Nuestros precios</h2>
-            </div>
-            <div class="price-grid">
-                <div class="price-card">
-                    <div class="price-card-heading">
-                        <div class="icon"><img src="/assets/icons/time.webp" alt="Icono de un reloj"></div>
-                        <h3 class="h3">TARIFA POR HORA</h3>
-                    </div>
-                    <div class="price"><p class="number">$15</p><p>USD</p></div>
-                    <ul class="price-card-ul">
-                        <li>Consultoria</li>
-                        <li>Evaluación Heurística</li>
-                        <li>Rediseños</li>
-                        <li>Tareas específicas</li>
-                    </ul>
+        <section class="section-xl why-ux-ok">
+            <div class="container-xl why-ux-ok-container">
+            <img src="/assets/photo-whyux.webp" alt="una pantalla de computadora con diseño de una web en ella">
+            <div class="why-ux-ok-text">
+                <h2 class="h2">¿Por qué elegir UX OK?</h2>
+                <div class="why-ux-ok-text-item">
+                    <img src="/assets/arrow-right-rounder.png" alt="">
+                    <p><b>Especialistas en experiencia de usuario:</b><br>
+                    Diseñamos pensando en las personas, no solo en la estética.</p>
                 </div>
-                <div class="price-card">
-                    <div class="price-card-heading">
-                        <div class="icon"><img src="/assets/icons/project.webp" alt="Icono de una tabla de proyecto con un check"></div>
-                        <h3 class="h3">MÍNIMO POR PROYECTO COMPLETO</h3>
-                    </div>
-                    <div class="price"><p class="number">$1.000</p><p>USD</p></div>
-                    <ul class="price-card-ul">
-                        <li>Research</li>
-                        <li>UX Design</li>
-                        <li>UI Design</li>
-                        <li>User Testing</li>
-                        <li>Handoff</li>
-                        <li>QA de implementación</li>
-                    </ul>
+                <div class="why-ux-ok-text-item">
+                    <img src="/assets/arrow-right-rounder.png" alt="">
+                    <p><b>Metodología ágil y eficiente:</b><br>
+                    Adaptamos el proceso a tus tiempos y necesidades.</p>
                 </div>
-                <div class="price-card" id="full-team" >
-                    <div class="price-card-heading">
-                        <div class="icon"><img src="/assets/icons/groups.webp" alt="Icono de tres personas representando un equipo"></div>
-                        <h3 class="h3">FULL TEAM</h3>
-                    </div>
-                    <div class="price"><p class="number">$22</p><p>USD</p></div>
-                    <ul class="price-card-ul">
-                        <li>Equipo dedicado full time mensualmente para las tareas que se requieran.</li>
-                    </ul>
+                <div class="why-ux-ok-text-item">
+                    <img src="/assets/arrow-right-rounder.png" alt="">
+                    <p><b>Enfoque en resultados:</b><br>
+                    Creamos productos digitales que generan impacto real.</p>
+                </div>
+                <div class="why-ux-ok-text-item">
+                    <img src="/assets/arrow-right-rounder.png" alt="">
+                    <p><b>Optimización continua:</b><br>
+                    Mejoramos constantemente la experiencia.</p>
                 </div>
             </div>
-        </section>
-
-        <section class="section-large container-xl"> 
-            <div class="title title-gradient-secondary">
-                <h2 class="title-small">¿Cómo funciona?</h2>
-            </div>
-            <div class="method-grid">
-                <div class="services-grid-bg"></div>
-                <div class="method-card">
-                    <div class="method-card-title"><span>1.</span><h3>Nos conocemos</h3></div>
-                    <p class="body-xlarge">Cuéntanos sobre tu agencia y tus necesidades.</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-card-title"><span>2.</span><h3>Definimos el plan</h3></div>
-                    <p class="body-xlarge">Definimos objetivos, estructura y tiempos.</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-card-title"><span>3.</span><h3>Diseñamos contigo</h3></div>
-                    <p class="body-xlarge">Creamos experiencias digitales alineadas con tus clientes.</p>
-                </div>
             </div>
         </section>
 
         <section class="section-large container-large">
-            <div class="title title-gradient-secondary">
-                <h2 class="title-small">Preguntas frecuentes</h2>
+            <div class="title">
+                <h2 class="h2">Preguntas frecuentes</h2>
             </div>
             <div class="accordion">
                 <!-- Item 1 -->
@@ -271,17 +282,22 @@
 
         <section class="section-xl container-xl contact" id="form">
             <div class="contact-text">
-                
-               <div>
-                <h3 class="h3">¡Potencia tu agencia con UX/UI ahora!</h3>
-                <p>No pierdas clientes por no tener UX/UI en tu oferta. Hablemos y sumemos valor a tu agencia.</p>
-               </div>
+                <h3 class="h3">¿Listo para mejorar tu producto digital?</h3>
+                <p>UX OK | Diseñamos experiencias que conectan</p>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="#ffffff"/>
+                    </svg>
+                    <p>uxok</p>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z" fill="#ffffff"/>
+                    </svg>
+                    <p>hola@uxok.com.ar</p>
+                </a>
+            </div>
 
-               <div> 
-                <h3 class="h3">¿Tenés un proyecto?</h3>
-                <p>Contanos tu idea y armamos un presupesto a tu medida.</p>
-            </div>
-            </div>
             <form action="https://vulcanocrm.com/endpoints/built-forms/v1/send-message" class="vulcano-form contact-form" method="POST" accept-charset="utf-8">
                 <div class="form-group">
                 <label for="field_name">Nombre y Apellido</label>
@@ -301,14 +317,56 @@
                 <p class="g-recaptcha" data-sitekey="6LdTL9AqAAAAAPYIxRRIIybn5OZYl86iH615ZGVR"></p>
                 <input type="hidden" name="hash" value="VFZSblBRPT0="/>
                 
-                <button class="button button-primary" type="submit" id="submit">Enviar</button>
+                <button class="button button-primary button-icon button-medium" type="submit" id="submit">Enviar<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5 5h14v14h-2V8.414L5.707 19.707l-1.414-1.414L15.586 7H5V5z"/>
+                </svg></button>
                 
             </form>
                 
         </section>
 
         <footer>
-            <p>UX OK 2025 | Argentina</p>
+            <p class="invitation">let's work together</p>
+            <div class="footer-services">
+            <span>Web</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+                </svg>
+            <span>UX/UI</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+              </svg>
+            <span>Aplicaciones</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+              </svg>
+            <span>E-commerce</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 17 17" fill="none">
+                <path d="M0.5 9.68451V7.35194H3.48182L6.02727 7.75285L6.20909 7.31549L4.13636 5.78474L2.02727 3.67084L3.66364 2.03075L5.77273 4.1082L7.3 6.2221L7.73636 6.03986L7.33636 3.45217V0.5H9.66364V3.45217L9.26364 6.03986L9.7 6.2221L11.2273 4.1082L13.3364 2.03075L14.9727 3.67084L12.9 5.78474L10.7909 7.31549L10.9727 7.75285L13.5182 7.35194H16.5V9.68451H13.5182L10.9727 9.2836L10.7909 9.72096L12.9 11.2517L14.9727 13.3656L13.3364 15.0057L11.2273 12.8918L9.7 10.7779L9.26364 10.9601L9.66364 13.5478V16.5H7.33636V13.5478L7.73636 10.9601L7.3 10.7779L5.77273 12.8918L3.66364 15.0057L2.02727 13.3656L4.13636 11.2517L6.20909 9.72096L6.02727 9.2836L3.48182 9.68451H0.5Z" fill="#110715"/>
+              </svg>
+            <span>SEO</span>
+            </div>
+            <div class="brand-data">  
+                <a class="button button-secondary button-icon button-large" href="#form">Contáctanos<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5 5h14v14h-2V8.414L5.707 19.707l-1.414-1.414L15.586 7H5V5z"/>
+                </svg></a> 
+                <div class="brand-data-text">
+                    <img src="/assets/brand-secondary.webp" alt="logo de UX OK">
+                    <p class="direction">Buenos Aires, argentina</p>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="#110715"/>
+                          </svg>
+                        <p>uxok</p>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z" fill="#110715"/>
+                          </svg>
+                        <p>hola@uxok.com.ar</p>
+                    </a>
+                    </div>
+            </div>
         </footer>
 
     </main>
