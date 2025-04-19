@@ -69,7 +69,7 @@
 }
 
 .price-card {
-    width: 380px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -88,13 +88,17 @@
         align-items: start;
         align-items: center;
         gap: 16px;
+        h3 {
+            font-family: $font-title;
+            font-size: $font-size-500;
+            color: $color-gray-50;
+            font-weight: 300;
+            line-height: normal;
+        }
     }
-    .h4 {
-        font-size: $font-size-300;
-        font-weight: 200;
+    span {
         color: $color-brand-primary;
     }
-
     &-ul{
         padding: $spacing-400;
         display: flex;
@@ -118,46 +122,52 @@
 }
 
 .number {
-    font-size: 40px;
-    line-height: normal;
-    font-weight: 300;
+    font-family: $font-title;
+    font-size: $font-size-1200;
+    color: $color-brand-primary;
+    line-height: 40px;
+    &-small {
+        font-size: $font-size-1000;
+    }
 }
 
 #full-team{
     @include media (tablet){
-        height: 410px;
+        height: 300px;
+        justify-content: center;
     }  
 }
 
 .method-card{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     justify-content: start;
     align-items: start;
-    gap: 8px;
-    &-title{
+    gap: 16px;
+    @include media (tablet){
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    &-heading{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        align-items: start;
         align-items: center;
         gap: 16px;
-        span{
-            font-size: 22px;
-            font-weight: 600;
-            color: $color-brand-primary;
-        }
-        h3{
+        h3 {
             font-size: 24px;
-            font-weight: 200;
-            color: $color-brand-primary;
+            line-height: normal;
         }
     }
-    p{
-        font-size: 18px;
-        font-weight: 200;
-        color: $color-gray-200;
-        text-align: start;
+    &-description {
+        max-width: 500px;
+        padding-left: 8px;
+        border-left: 1px solid $color-brand-primary;
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
     
 }

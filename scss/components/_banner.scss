@@ -1,5 +1,5 @@
 
-.hero-banner {
+.banner {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,10 +26,10 @@
         }
     }
     img {
-        width: 320px;
-        height: 315.11px;
+        width: 100%;
+        height: auto;
         @include media (tablet){
-            width: 500px;
+            width: 550px;
             height: auto;
         }
     }
@@ -46,6 +46,14 @@
         span {
             color: $color-brand-primary;
         }
+        &-description {
+            padding-left: 8px;
+            border-left: 1px solid $color-brand-primary;
+            p {
+                font-size: 18px;
+                line-height: normal;
+            }
+        }
         a {
             
             img {
@@ -54,5 +62,6 @@
                 color: aqua;
             }
         }
+        
     }
 }

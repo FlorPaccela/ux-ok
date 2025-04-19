@@ -1,18 +1,14 @@
 
 .method-grid{
+    position: relative;
     padding: $spacing-800;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 40px;
     border-radius: 8px;
     border: 2px solid rgba(250, 250, 250, 0.1);
     border-radius: 8px;
     background: rgba(17, 7, 21, 0.50);
     backdrop-filter: blur(5px);
-    @include media (tablet){
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 24px;
-    }
 }

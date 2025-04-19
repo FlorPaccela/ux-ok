@@ -1,11 +1,11 @@
 .price-grid {
+    width: 100%;
     padding-top: 24px;
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 16px;
     @include media (tablet){
       width: 100%;
       flex-direction: row;
