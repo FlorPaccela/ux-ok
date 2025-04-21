@@ -1,0 +1,38 @@
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    background: $color-brand-primary;
+    padding: 16px;
+    margin: 24px 0 0;
+}
+  
+.carousel-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-width: auto;
+    padding: 16px 0px;
+    font-family: $font-button;
+    font-size: 20px;
+    font-weight: 300;
+}
+  
+/* Animación */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

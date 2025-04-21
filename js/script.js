@@ -1,4 +1,31 @@
 
+//CARROUSEL
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('carouselTrack');
+  let speed = 0.5; // píxeles por frame
+  let position = 0;
+
+  // Clonamos el contenido 2 veces para tener 3 copias
+  const originalContent = track.innerHTML;
+  track.innerHTML += originalContent  + originalContent + originalContent;
+
+  function animate() {
+    position -= speed;
+    track.style.transform = `translateX(${position}px)`;
+
+    // Cuando pasó un tercio, agregamos más contenido
+    if (Math.abs(position) >= track.scrollWidth / 3) {
+      track.innerHTML += originalContent;
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+});
+
+//FORMULARIO 
+
 document.addEventListener("DOMContentLoaded", () => {  
     const accordionHeaders = document.querySelectorAll(".accordion-header");
  

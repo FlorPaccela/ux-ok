@@ -40,17 +40,3 @@
   }
   }
 }
-
-.carrousel-services {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  background-color: $color-brand-primary;
-  padding: 24px 20px;
-  span{
-    font-family: $font-title;
-    font-size: $font-size-600;
-  }
-}

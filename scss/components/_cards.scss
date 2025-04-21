@@ -10,16 +10,9 @@
         padding: $spacing-800;
     }
     &-primary{
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: end;
         gap: 28px;
-        @include media (tablet){
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            gap: 24px;
-        }
     }
     &-secondary {
         width: 100%;
@@ -31,6 +24,13 @@
         border-radius: 8px;
         background: rgba(17, 7, 21, 0.50);
         backdrop-filter: blur(5px);
+        h3 {
+            font-family: $font-title;
+            font-size: $font-size-500;
+            color: $color-gray-50;
+            font-weight: 300;
+            line-height: normal;
+        }
         @include media (tablet){
             max-width: 360px;
         }
@@ -52,6 +52,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 8px;
+        text-transform: uppercase;
     }
     .number {
         font-family: $font-title;

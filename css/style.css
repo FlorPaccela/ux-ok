@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reboot Codes - Based on normalize.css v5.0.0
 **********************/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
@@ -1146,6 +1147,7 @@ footer {
   }
 }
 footer .invitation {
+  font-family: "Space Grotesk";
   position: absolute;
   left: 0;
   right: 0;
@@ -1320,6 +1322,13 @@ a {
 }
 .button-large {
   padding: 18px 48px;
+}
+.button-text {
+  background-color: transparent;
+  border: none;
+}
+.button-text:hover {
+  color: #110715;
 }
 
 .icon {
@@ -1514,18 +1523,9 @@ a {
   }
 }
 .services-card-primary {
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: end;
   gap: 28px;
-}
-@media only screen and (min-width: 768px) {
-  .services-card-primary {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-  }
 }
 .services-card-secondary {
   width: 100%;
@@ -1538,6 +1538,13 @@ a {
   background: rgba(17, 7, 21, 0.5);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+}
+.services-card-secondary h3 {
+  font-family: "Space Grotesk";
+  font-size: 22px;
+  color: #f6f6f6;
+  font-weight: 300;
+  line-height: normal;
 }
 @media only screen and (min-width: 768px) {
   .services-card-secondary {
@@ -1561,6 +1568,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
+  text-transform: uppercase;
 }
 .services-card .number {
   font-family: "Space Grotesk";
@@ -1922,20 +1930,45 @@ input:-webkit-autofill:active {
   }
 }
 
-.carrousel-services {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  background-color: #06E369;
-  padding: 24px 20px;
-}
-.carrousel-services span {
-  font-family: "Space Grotesk";
-  font-size: 24px;
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  background: #06E369;
+  padding: 16px;
+  margin: 24px 0 0;
 }
 
+.carousel-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: -moz-max-content;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  padding: 16px 0px;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Animación */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .price-grid {
   width: 100%;
   padding-top: 24px;

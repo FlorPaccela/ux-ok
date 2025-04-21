@@ -97,4 +97,11 @@ a {
     &-large {
         padding: 18px 48px;
     }
+    &-text {
+        background-color: transparent;;
+        border: none;
+        &:hover {
+            color: $color-brand-secondary;
+        }
+    }
 }
