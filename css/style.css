@@ -1528,6 +1528,7 @@ a {
   }
 }
 .services-card-secondary {
+  width: 100%;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
@@ -1537,6 +1538,11 @@ a {
   background: rgba(17, 7, 21, 0.5);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+}
+@media only screen and (min-width: 768px) {
+  .services-card-secondary {
+    max-width: 360px;
+  }
 }
 .services-card-content {
   display: flex;
@@ -1900,6 +1906,20 @@ input:-webkit-autofill:active {
   height: 100%;
   background: rgba(56, 13, 74, 0.2);
   filter: blur(25px);
+}
+
+#extra {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media only screen and (min-width: 768px) {
+  #extra {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) {
+  #extra .services-card-secondary {
+    max-width: none;
+  }
 }
 
 .carrousel-services {
