@@ -1,3 +1,29 @@
+//MENU DESKTOP
+const services = document.querySelector ('#services');
+const menuOptions = document.querySelector ('.menu-options');
+
+services.addEventListener('click', togglemenuOptions);
+menuOptions.addEventListener('click', (event) => {
+  event.stopPropagation(); // Evita que el click adentro del menú cierre inmediatamente
+});
+
+document.addEventListener('click', (event) => {
+  if (!menuOptions.classList.contains('inactive') && !services.contains(event.target)) {
+    menuOptions.classList.add('inactive');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (!menuOptions.classList.contains('inactive')) {
+    menuOptions.classList.add('inactive');
+  }
+});
+
+function togglemenuOptions(event) {
+  event.stopPropagation(); // También evita que al hacer click en #services se dispare el document click
+  menuOptions.classList.toggle('inactive');
+}
+
 
 //CARROUSEL
 document.addEventListener('DOMContentLoaded', () => {

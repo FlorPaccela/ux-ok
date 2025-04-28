@@ -4,10 +4,48 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>https://uxok.com.ar/</loc>
-  <lastmod>2025-02-13T17:46:33+00:00</lastmod>
+  <lastmod>2025-04-28T20:18:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://uxok.com.ar/pages/contact.html</loc>
+  <lastmod>2025-04-28T20:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxok.com.ar/pages/dise%C3%B1o-web.html</loc>
+  <lastmod>2025-04-28T20:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxok.com.ar/pages/dise%C3%B1o-ux-ui.html</loc>
+  <lastmod>2025-04-28T20:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxok.com.ar/pages/aplications.html</loc>
+  <lastmod>2025-04-28T20:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxok.com.ar/pages/e-commerce.html</loc>
+  <lastmod>2025-04-28T20:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxok.com.ar/pages/seo.html</loc>
+  <lastmod>2025-04-28T20:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://uxok.com.ar/index.html</loc>
+  <lastmod>2025-04-28T20:18:20+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

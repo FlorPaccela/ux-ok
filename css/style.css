@@ -1099,14 +1099,26 @@ nav {
   top: 0;
   z-index: 100;
 }
-nav div {
+nav ul li {
+  padding: 12px 12px;
+  border-bottom: 1px solid #110715;
+}
+nav ul li::before {
+  content: none;
+}
+nav ul li:hover {
+  border-bottom: 1px solid #06E369;
+  cursor: pointer;
+}
+
+.nav-container {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-nav div img {
+.nav-container img {
   height: 40px;
   width: 40px;
 }
@@ -1127,6 +1139,72 @@ nav div img {
 }
 .menu-item:hover {
   color: #06E369;
+}
+
+.menu-options {
+  position: absolute;
+  top: 68px;
+  right: 0;
+  z-index: 1000;
+  height: 100vh;
+  background-color: #110715;
+  border: 2px solid rgba(250, 250, 250, 0.1);
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 40px 20px;
+  border-radius: 0px;
+  gap: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .menu-options {
+    top: 60px;
+    right: 10%;
+    width: 70%;
+    height: auto;
+    flex-direction: row;
+    padding: 40px;
+    border-radius: 24px;
+    gap: 16px;
+  }
+}
+.menu-options a {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 16px;
+  color: #f6f6f6;
+  font-size: 24px;
+  border-radius: 8px;
+}
+.menu-options a img {
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .menu-options a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu-options a {
+    font-size: 18px;
+  }
+}
+.menu-options a:hover {
+  color: #06E369;
+  background-color: #1C0C22;
+}
+
+.inactive {
+  display: none;
 }
 
 footer {
