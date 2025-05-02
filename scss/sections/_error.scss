@@ -26,7 +26,7 @@
         flex-direction: column;
         align-items: center;
         gap: 24px;
-        text-align: center;
+        text-align: start;
         @include media (tablet) {
             align-items: start;
         }
