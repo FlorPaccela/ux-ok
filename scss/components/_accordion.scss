@@ -41,7 +41,7 @@
     font-size: 22px;
     font-weight: 200;
     text-align: start;
-    color: $color-gray-50;
+    color: $color-text;
     background-color: $color-brand-secondary;
     border: none;
     outline: none;
@@ -75,7 +75,7 @@
   
   /* Active styles */
   .accordion-header.active {
-    color: $color-gray-50;
+    color: $color-text;
     background-color: $color-brand-secondary;
   }
   

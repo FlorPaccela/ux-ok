@@ -13,8 +13,12 @@ $border-small: 1px;
 $border-medium: 2px;
 $border-large: 4px;
 
+$border-gradiente-primary: linear-gradient(134deg,rgba(166, 166, 166, 1) 0%, rgba(166, 166, 166, 0) 100%);
+$border-gradiente-secomndary: linear-gradient(134deg,rgba(57, 242, 174, 1) 0%, rgba(57, 242, 174, 0) 100%);
+
 // SHADOWS //
 
 $shadow-box: -2px 2px 4px 0px rgba(0, 0, 0, 0.20);
 $shadow-button: -2px 2px 4px 0px rgba(0, 0, 0, 0.20);
 $shadow-custom: -2px 2px 4px 0px rgba(0, 0, 0, 0.20);
+

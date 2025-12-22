@@ -30,12 +30,7 @@ a {
             color: $color-brand-secondary;
             background-color: $color-brand-primary;
             border: solid $border-small $color-additional-white;
-        }       
-        &:disabled {
-            color: $color-primary-800;
-            background-color: $color-primary-200;
-            border: solid $border-small $color-primary-200;
-        }
+        }        
     }
     &-secondary{
         color: $color-brand-primary;
@@ -56,11 +51,6 @@ a {
             background-color: $color-brand-secondary;
             border: solid $border-small $color-additional-white;
         }
-        &:disabled {
-            color: $color-primary-800;
-            background-color: $color-primary-200;
-            border: solid $border-small $color-primary-200;
-        }
     }
     &-text{
         padding: 0;
@@ -71,14 +61,11 @@ a {
             color: $color-brand-primary;
         }
         &:hover {
-            color: $color-primary-200;
+            color: $color-accent;
         }
         &:focus {
             color: $color-brand-primary;
-            border: solid $border-small $color-primary-200;
-        }
-        &:disabled {
-            color: $color-primary-200;
+            border: solid $border-small $color-accent;
         }
     }
     &-icon {

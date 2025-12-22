@@ -8,7 +8,7 @@
     }
     &-text {
       width: 100%;
-      color: $color-gray-50;
+      color: $color-text;
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -39,7 +39,7 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      color: $color-gray-50;
+      color: $color-text;
       @include media (tablet){
         width: 50%;
         button {

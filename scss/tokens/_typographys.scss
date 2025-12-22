@@ -14,7 +14,7 @@ $font-link: 'Space Grotesk';
 
 p {
     font-family: $font-body;
-    color: $color-gray-50;
+    color: $color-text;
     font-weight: 200;
     @include font-size ($font-size-75, $line-height-small);
 }
@@ -23,14 +23,14 @@ p {
 
 .h1 {
     font-family: $font-title;
-    color: $color-gray-50;
+    color: $color-text;
     font-weight: 500;
     @include font-size ($font-size-1000, $line-height-default);
 }
 
 .h2 {
     font-family: $font-title;
-    color: $color-gray-50;
+    color: $color-text;
     font-weight: 300;
     @include font-size ($font-size-1000, $line-height-small);
 }
@@ -38,7 +38,7 @@ p {
 .h3 {
     font-family: $font-title;
     text-transform: uppercase;
-    color: $color-gray-50;
+    color: $color-text;
     font-weight: 200;
     @include font-size ($font-size-600,  $line-height-small);
 }
