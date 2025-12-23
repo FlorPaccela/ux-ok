@@ -1,17 +1,17 @@
 
 .hero-banner {
     width: 100%;
+    height: 490px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
     align-items: center;
     color: $color-text;
-    background: radial-gradient(74.47% 37.87% at 50% -13.06%, rgba(6, 227, 105, 0.50) 0%, rgba(17, 7, 21, 0.50) 100%);
+    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.50) 0%, rgba(57, 242, 174, 0) 100%);
     backdrop-filter: blur(5px);
     @include media (tablet){
-        flex-direction: row;
-        background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(6, 227, 105, 0.50) 0%, rgba(17, 7, 21, 0.50) 100%);
+        background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.50) 0%, rgba(57, 242, 174, 0) 100%);
         backdrop-filter: blur(5px);
     }
     &-content{
@@ -20,10 +20,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 32px;
-        @include media (tablet){
-            flex-direction: row;
-        }
+        gap: 40px;
     }
     img {
         width: 320px;
@@ -38,12 +35,17 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        align-items: start;
-        @include media (tablet){
-            width: 50%;
+        text-align: center;
+        gap: 40px;
+        align-items: center;
+        h1{
+            @include font-size ($font-size-1300, $line-height-default);
         }
-        span {
+        p {
+            color: $color-text;
+            @include font-size ($font-size-800, $line-height-small);
+        }
+        span{
             color: $color-brand-primary;
         }
         a {

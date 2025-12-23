@@ -34,7 +34,6 @@ a {
     }
     &-secondary{
         color: $color-brand-primary;
-        background-color: $color-brand-secondary;
         border: solid $border-small $color-brand-primary;
         &:enabled {
             color: $color-brand-primary;

@@ -1131,7 +1131,7 @@ nav ul li:hover {
   gap: 24px;
 }
 .menu-item {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 200;
@@ -1297,7 +1297,7 @@ footer .brand-data-text a {
 }
 
 a {
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
   text-decoration: none;
   margin: 0;
   box-sizing: border-box;
@@ -1339,7 +1339,6 @@ a {
 }
 .button-secondary {
   color: #39F2AE;
-  background-color: #1A1D24;
   border: solid 1px #39F2AE;
 }
 .button-secondary:enabled {
@@ -1409,20 +1408,20 @@ a {
 
 .hero-banner {
   width: 100%;
+  height: 490px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 40px;
   align-items: center;
   color: #FAFAFA;
-  background: radial-gradient(74.47% 37.87% at 50% -13.06%, rgba(6, 227, 105, 0.5) 0%, rgba(17, 7, 21, 0.5) 100%);
+  background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.5) 0%, rgba(57, 242, 174, 0) 100%);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
 @media only screen and (min-width: 768px) {
   .hero-banner {
-    flex-direction: row;
-    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(6, 227, 105, 0.5) 0%, rgba(17, 7, 21, 0.5) 100%);
+    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.5) 0%, rgba(57, 242, 174, 0) 100%);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
   }
@@ -1433,12 +1432,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-}
-@media only screen and (min-width: 768px) {
-  .hero-banner-content {
-    flex-direction: row;
-  }
+  gap: 40px;
 }
 .hero-banner img {
   width: 320px;
@@ -1454,12 +1448,29 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: start;
+  text-align: center;
+  gap: 40px;
+  align-items: center;
+}
+.hero-banner-text h1 {
+  font-size: 60px;
+  line-height: 60px;
 }
 @media only screen and (min-width: 768px) {
-  .hero-banner-text {
-    width: 50%;
+  .hero-banner-text h1 {
+    font-size: 67.5px;
+    line-height: 67.5px;
+  }
+}
+.hero-banner-text p {
+  color: #FAFAFA;
+  font-size: 32px;
+  line-height: 41.6px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-banner-text p {
+    font-size: 36px;
+    line-height: 46.8px;
   }
 }
 .hero-banner-text span {
@@ -1479,14 +1490,14 @@ a {
   gap: 40px;
   align-items: center;
   color: #FAFAFA;
-  background: radial-gradient(74.47% 37.87% at 50% -13.06%, lab(79.61% -71.33 46.45/0.5) 0%, rgba(17, 7, 21, 0.5) 100%);
+  background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.5) 0%, rgba(57, 242, 174, 0) 100%);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
 @media only screen and (min-width: 768px) {
   .banner {
     flex-direction: row;
-    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.5) 0%, rgba(17, 7, 21, 0.5) 100%);
+    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.5) 0%, rgba(57, 242, 174, 0) 100%);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
   }
@@ -1998,9 +2009,9 @@ input:-webkit-autofill:active {
 .carousel-container {
   overflow: hidden;
   width: 100%;
-  background: #39F2AE;
   padding: 16px;
   margin: 24px 0 0;
+  color: #39F2AE;
 }
 
 .carousel-track {
@@ -2011,6 +2022,7 @@ input:-webkit-autofill:active {
   width: -moz-max-content;
   width: max-content;
   animation: scroll 20s linear infinite;
+  color: #39F2AE;
 }
 
 .carousel-item {
@@ -2020,9 +2032,13 @@ input:-webkit-autofill:active {
   justify-content: center;
   min-width: auto;
   padding: 16px 0px;
-  font-family: "Space Grotesk";
+  font-family: "Roboto";
+  color: #39F2AE;
   font-size: 20px;
   font-weight: 300;
+}
+.carousel-item svg {
+  color: #39F2AE;
 }
 
 /* Animación */
