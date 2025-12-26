@@ -453,6 +453,9 @@ output {
 
 
 .section-xs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -461,6 +464,9 @@ output {
 }
 @media only screen and (min-width: 768px) {
   .section-xs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -469,6 +475,9 @@ output {
   }
 }
 .section-small {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -477,6 +486,9 @@ output {
 }
 @media only screen and (min-width: 768px) {
   .section-small {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -485,6 +497,9 @@ output {
   }
 }
 .section-medium {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -493,6 +508,9 @@ output {
 }
 @media only screen and (min-width: 768px) {
   .section-medium {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -501,6 +519,9 @@ output {
   }
 }
 .section-large {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -509,6 +530,9 @@ output {
 }
 @media only screen and (min-width: 768px) {
   .section-large {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -517,6 +541,9 @@ output {
   }
 }
 .section-xl {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -525,6 +552,9 @@ output {
 }
 @media only screen and (min-width: 768px) {
   .section-xl {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -533,6 +563,9 @@ output {
   }
 }
 .section-xxl {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 100%;
   padding-top: 120px;
   padding-bottom: 0 120px;
@@ -541,6 +574,9 @@ output {
 }
 @media only screen and (min-width: 768px) {
   .section-xxl {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -665,14 +701,14 @@ p {
 .h2 {
   font-family: "Space Grotesk";
   color: #FAFAFA;
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 52px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41.6px;
 }
 @media only screen and (min-width: 768px) {
   .h2 {
-    font-size: 45px;
-    line-height: 58.5px;
+    font-size: 36px;
+    line-height: 46.8px;
   }
 }
 
@@ -1556,7 +1592,6 @@ a {
 
 .title {
   width: 100%;
-  padding: 24px 0;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -1982,6 +2017,53 @@ input:-webkit-autofill:active {
   }
 }
 .services-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 13, 74, 0.2);
+  filter: blur(25px);
+}
+
+#extra {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media only screen and (min-width: 768px) {
+  #extra {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) {
+  #extra .services-card-secondary {
+    max-width: none;
+  }
+}
+
+.specialization-grid {
+  position: relative;
+  padding: 0;
+}
+.specialization-grid-primary {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.specialization-grid-secondary {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .specialization-grid-secondary {
+    padding: 28px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+  }
+}
+.specialization-grid-bg {
   position: absolute;
   top: 0;
   left: 0;

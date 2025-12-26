@@ -4,12 +4,17 @@
 // TIENE QUE TENER PADDING TOP Y BOTTOM, Y PADDING RICHT Y LEFT
 
 @mixin section ($spacing-top, $spacing-bottom) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
     padding-top: $spacing-top;
     padding-bottom: $spacing-bottom;
     padding-left: $spacing-600;
     padding-right: $spacing-600;
 }
+
+      
 
 .section {
     &-xs {

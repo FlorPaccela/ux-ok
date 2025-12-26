@@ -31,8 +31,8 @@ p {
 .h2 {
     font-family: $font-title;
     color: $color-text;
-    font-weight: 300;
-    @include font-size ($font-size-1000, $line-height-small);
+    font-weight: 400;
+    @include font-size ($font-size-800, $line-height-small);
 }
 
 .h3 {
