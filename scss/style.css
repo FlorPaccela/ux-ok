@@ -1130,7 +1130,7 @@ p {
 nav {
   width: 100%;
   padding: 8px 20px;
-  background-color: #1A1D24;
+  background-color: #090B0F;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -1665,83 +1665,64 @@ a {
 
 .services-card {
   display: flex;
-  padding: 16px;
-  border-radius: 8px;
-  border: 2px solid rgba(250, 250, 250, 0.1);
-  background: rgba(19, 19, 19, 0.2);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-@media only screen and (min-width: 768px) {
-  .services-card {
-    padding: 24px;
-  }
-}
-.services-card-primary {
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 28px;
-}
-.services-card-secondary {
-  width: 100%;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  gap: 24px;
-  border: 2px solid rgba(250, 250, 250, 0.1);
+  justify-content: end;
+  padding: 20px;
   border-radius: 8px;
-  background: rgba(17, 7, 21, 0.5);
+  border: 2px solid rgba(99, 99, 99, 0.1);
+  background: #111419;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-}
-.services-card-secondary h3 {
-  font-family: "Space Grotesk";
-  font-size: 22px;
   color: #FAFAFA;
-  font-weight: 300;
-  line-height: normal;
-}
-@media only screen and (min-width: 768px) {
-  .services-card-secondary {
-    max-width: 360px;
-  }
+  gap: 22px;
 }
 .services-card-content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-.services-card-heading {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  gap: 16px;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 .services-card-tag {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
-  text-transform: uppercase;
-}
-.services-card .number {
-  font-family: "Space Grotesk";
-  font-size: 52px;
-  color: #39F2AE;
-  line-height: 40px;
 }
 
 .tag {
+  font-size: 14px;
+  line-height: auto;
+  color: #FAFAFA;
   display: flex;
-  padding: 8px 16px 4px;
+  padding: 8px 16px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 100px;
-  background: #22262E;
+  background: #1A1D24;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  text-transform: uppercase;
+}
+
+.button-service {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  color: #39F2AE;
+  gap: 8px;
+}
+.button-service p {
+  display: none;
+  color: #39F2AE;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.button-service:hover p {
+  display: block;
 }
 
 .price-card {
@@ -2177,15 +2158,14 @@ input:-webkit-autofill:active {
 }
 .services-grid-secondary {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-column-gap: 24px;
   grid-row-gap: 16px;
 }
 @media only screen and (min-width: 768px) {
   .services-grid-secondary {
-    padding: 28px 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
   }
 }
 .services-grid-bg {

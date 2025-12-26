@@ -1,57 +1,20 @@
 .services-card {
     display: flex;
-    padding: $spacing-400;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
     border-radius: 8px;
-    border: 2px solid rgba(250, 250, 250, 0.1);
-    background: rgba(19, 19, 19, 0.20);
+    border: 2px solid rgba(99, 99, 99, 0.1);
+    background: $color-card;
     backdrop-filter: blur(5px);
-
-    @include media (tablet) {
-        padding: $spacing-800;
-    }
-
-    &-primary {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 28px;
-    }
-
-    &-secondary {
-        width: 100%;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-        gap: 24px;
-        border: 2px solid rgba(250, 250, 250, 0.1);
-        border-radius: 8px;
-        background: rgba(17, 7, 21, 0.50);
-        backdrop-filter: blur(5px);
-
-        h3 {
-            font-family: $font-title;
-            font-size: $font-size-500;
-            color: $color-text;
-            font-weight: 300;
-            line-height: normal;
-        }
-
-        @include media (tablet) {
-            max-width: 360px;
-        }
-    }
+    color: $color-text;
+    gap: 22px;
 
     &-content {
         display: flex;
         flex-direction: column;
-        gap: 24px;
-    }
-
-    &-heading {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: start;
-        gap: 16px;
+        gap: 20px;
+        padding-bottom: 20px;
     }
 
     &-tag {
@@ -59,27 +22,48 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 8px;
-        text-transform: uppercase;
-    }
-
-    .number {
-        font-family: $font-title;
-        font-size: $font-size-1200;
-        color: $color-brand-primary;
-        line-height: 40px;
     }
 }
 
 .tag {
+    font-size: 14px;
+    line-height: auto;
+    color: $color-text;
     display: flex;
-    padding: 8px 16px 4px;
+    padding: 8px 16px;
     justify-content: center;
     align-items: center;
     gap: 8px;
     border-radius: 100px;
-    background: $color-muted;
+    background: $color-brand-secondary;
     backdrop-filter: blur(2px);
+    text-transform: uppercase;
 }
+
+.button-service {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    color: $color-brand-primary;
+    gap: 8px;
+
+    p {
+        display: none;
+        color: $color-brand-primary;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+    &:hover {
+        p {
+            display: block;
+        }
+    }
+}
+
 
 .price-card {
     width: 100%;
