@@ -1,4 +1,3 @@
-
 a {
     font-family: $font-button;
     text-decoration: none;
@@ -9,85 +8,112 @@ a {
 .button {
     text-transform: uppercase;
     font-weight: 400;
-    @include font-size($font-size-100,$line-height-default);
+    @include font-size($font-size-100, $line-height-default);
     text-align: center;
     border-radius: 8px;
-    &-primary{
+
+    &-primary {
         color: $color-brand-secondary;
         background-color: $color-brand-primary;
         border: solid $border-small $color-brand-primary;
+
         &:enabled {
             color: $color-brand-secondary;
             background-color: $color-brand-primary;
         }
+
         &:hover {
             text-decoration: none;
             color: $color-brand-primary;
-            background-color:$color-brand-secondary;
-            border: solid $border-small $color-brand-primary; 
+            background-color: $color-brand-secondary;
+            border: solid $border-small $color-brand-primary;
         }
+
         &:focus {
             color: $color-brand-secondary;
             background-color: $color-brand-primary;
             border: solid $border-small $color-additional-white;
-        }        
+        }
     }
-    &-secondary{
+
+    &-secondary {
         color: $color-brand-primary;
         border: solid $border-small $color-brand-primary;
+
         &:enabled {
             color: $color-brand-primary;
             background-color: $color-brand-secondary;
-            
+
         }
+
         &:hover {
             color: $color-brand-secondary;
             background-color: $color-brand-primary;
             border: solid $border-small $color-brand-primary;
         }
+
         &:focus {
             color: $color-brand-primary;
             background-color: $color-brand-secondary;
             border: solid $border-small $color-additional-white;
         }
     }
-    &-text{
+
+    &-text {
         padding: 0;
         color: $color-brand-primary;
         background-color: none;
         text-align: start;
+
         &:enabled {
             color: $color-brand-primary;
         }
+
         &:hover {
             color: $color-accent;
         }
+
         &:focus {
             color: $color-brand-primary;
             border: solid $border-small $color-accent;
         }
     }
+
     &-icon {
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 16px; 
+        gap: 16px;
     }
+
     &-small {
-        padding: 12px 18px;
+        padding: 8px 12px;
     }
+
     &-medium {
-        padding: 12px 24px;
+        padding: 12px 12px;
     }
+
     &-large {
-        padding: 18px 48px;
+        padding: 20px 32px;
     }
+
     &-text {
-        background-color: transparent;;
+        background-color: transparent;
+        ;
         border: none;
+
         &:hover {
             color: $color-brand-secondary;
         }
+    }
+
+    &-rounded {
+        border-radius: 32px;
+    }
+
+    &-square {
+        border-radius: 8px;
     }
 }

@@ -1,42 +1,64 @@
 .specialization-grid {
-    position: relative;
-    padding: 0;
-    &-primary {
+  position: relative;
+  padding: 0;
+
+  &-primary {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+
+    a {
+      flex: 1;
+      display: block
+    }
+
+    @include media (tablet) {
       display: flex;
       flex-direction: row;
-      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
     }
-    &-secondary {
-      display: grid ;
-      grid-template-columns: repeat(1, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 16px;
-      @include media (tablet){
+  }
+
+  &-secondary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 16px;
+
+    @include media (tablet) {
       padding: 28px 0;
       grid-template-columns: repeat(3, 1fr);
       grid-row-gap: 20px;
     }
-    }
-    &-bg{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(56, 13, 74, 0.20);
-      filter: blur(25px);
-    }
   }
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(56, 13, 74, 0.20);
+    filter: blur(25px);
+  }
+}
 
 #extra {
   grid-template-columns: repeat(1, 1fr);
-  @include media (tablet){
+
+  @include media (tablet) {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .services-card-secondary {
-    @include media (tablet){
+    @include media (tablet) {
       max-width: none;
-  }
+    }
   }
 }
