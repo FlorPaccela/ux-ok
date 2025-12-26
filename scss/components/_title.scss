@@ -1,27 +1,44 @@
-
 .title {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
 
-    
-    &-regular{
+
+    &-regular {
         font-size: 48px;
         font-weight: 200;
         line-height: normal;
-        @include media (tablet){
+
+        @include media (tablet) {
             font-size: 80px;
             line-height: auto;
         }
     }
-    &-small{
+
+    &-small {
         font-size: 36px;
         font-weight: 200;
         line-height: normal;
-        @include media (tablet){
+
+        @include media (tablet) {
             font-size: 54px;
             line-height: auto;
         }
+    }
+
+    &-large {
+        font-size: 64px;
+        font-weight: 200;
+        line-height: normal;
+
+        @include media (tablet) {
+            font-size: 128px;
+            line-height: auto;
+        }
+    }
+
+    &-center {
+        text-align: center;
     }
 }
