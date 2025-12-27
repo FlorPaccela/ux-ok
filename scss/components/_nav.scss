@@ -75,4 +75,16 @@
             ;
         }
     }
+
+    @include media (mobile) {
+        display: none;
+    }
+}
+
+.menu-icon {
+    display: block;
+
+    @include media (tablet) {
+        display: none;
+    }
 }

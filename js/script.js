@@ -1,4 +1,4 @@
-//MENU DESKTOP
+// //MENU DESKTOP
 const services = document.querySelector('#services');
 const menuOptions = document.querySelector('.menu-options');
 
@@ -22,6 +22,26 @@ window.addEventListener('scroll', () => {
 function togglemenuOptions(event) {
   event.stopPropagation(); // También evita que al hacer click en #services se dispare el document click
   menuOptions.classList.toggle('inactive');
+}
+
+//MENU MOBILE
+const serviceMobile = document.querySelector('#serviceMobile');
+const menuMobile = document.querySelector('.menu-options');
+
+serviceMobile.addEventListener('click', togglemenuMobile);
+
+menuMobile.addEventListener('click', (event) => {
+  event.stopPropagation();
+});
+
+window.addEventListener('scroll', () => {
+  menuMobile.classList.add('inactive');
+});
+
+function togglemenuMobile(event) {
+  event.preventDefault();   // 👈 evita el doble disparo mobile
+  event.stopPropagation();
+  menuMobile.classList.toggle('inactive');
 }
 
 
