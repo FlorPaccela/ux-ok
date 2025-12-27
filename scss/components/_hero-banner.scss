@@ -7,12 +7,17 @@
     gap: 40px;
     align-items: center;
     color: $color-text;
-    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.50) 0%, rgba(57, 242, 174, 0) 100%);
+    background: radial-gradient(60% 60% at 50% 0%,
+            rgba(57, 242, 174, 0.45) 0%,
+            rgba(57, 242, 174, 0) 70%), #090B0F;
     backdrop-filter: blur(5px);
 
     @include media (tablet) {
 
-        background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.50) 0%, rgba(57, 242, 174, 0) 100%);
+        background: radial-gradient(60% 60% at 50% 0%,
+                rgba(57, 242, 174, 0.45) 0%,
+                rgba(57, 242, 174, 0) 70%),
+            #090B0F;
         backdrop-filter: blur(5px);
     }
 
