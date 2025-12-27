@@ -15,7 +15,7 @@ p {
     font-family: $font-body;
     color: $color-text;
     font-weight: 200;
-    @include font-size ($font-size-75, $line-height-small);
+    @include font-size ($font-size-75, $line-height-medium);
 }
 
 // HEADINGS //
@@ -36,7 +36,6 @@ p {
 
 .h3 {
     font-family: $font-title;
-    text-transform: uppercase;
     color: $color-text;
     font-weight: 600;
     @include font-size ($font-size-700, $line-height-small);
