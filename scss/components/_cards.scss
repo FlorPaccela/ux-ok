@@ -23,6 +23,33 @@
         flex-wrap: wrap;
         gap: 8px;
     }
+
+    &-secondary {
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+
+        @include media (tablet) {
+            width: 360px;
+        }
+
+        .services-card-heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: auto;
+        }
+    }
 }
 
 .tag {

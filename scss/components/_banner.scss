@@ -1,68 +1,80 @@
-
 .banner {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
     align-items: center;
     color: $color-text;
-    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.50) 0%, rgba(57, 242, 174, 0) 100%);
-    backdrop-filter: blur(5px);
-    @include media (tablet){
+    padding-top: 76px;
+
+    @include media (tablet) {
         flex-direction: row;
-        //background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(6, 227, 105, 0.50) 0%, rgba(17, 7, 21, 0.50) 100%);
-        background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.50) 0%, rgba(57, 242, 174, 0) 100%);
-        backdrop-filter: blur(5px);
+        height: 600px;
+        padding-top: 0;
     }
-    &-content{
+
+    &-content {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 32px;
-        @include media (tablet){
+
+        @include media (tablet) {
             flex-direction: row;
         }
     }
+
     img {
         width: 100%;
         height: auto;
-        @include media (tablet){
+
+        @include media (tablet) {
             width: 550px;
             height: auto;
         }
     }
-    
+
     &-text {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: start;
-        @include media (tablet){
+
+        @include media (tablet) {
             width: 50%;
         }
+
+        h1 {
+            font-size: 40px;
+            line-height: auto;
+        }
+
         span {
             color: $color-brand-primary;
         }
+
         &-description {
             padding-left: 8px;
             border-left: 1px solid $color-brand-primary;
+
             p {
                 font-size: 18px;
-                line-height: normal;
+                line-height: auto;
             }
         }
+
         a {
-            
+
             img {
                 width: 24px;
                 height: 24px;
-                color: aqua;
             }
         }
-        
+
     }
 }

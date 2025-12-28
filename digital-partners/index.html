@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap">
+    </noscript>
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/brand/favicon.svg">
     <link rel="canonical" href="https://uxok.com.ar/digital-partner/" />
     <title>UX OK | Partner Studio</title>
     <meta name=”title” content=”Partner Studio | UX OK” />
     <meta name="description" content="Necesitas un team UX en tu empresa? ¡Estamos listos para sumarnos!">
-    <meta name="keywords" content="diseño UX UI, UX, UI, experiencia de usuario, interfaz de usuario, user research, prototipado interactivo, usabilidad, diseño responsive, design system, agency UX/UI, agencia UX UI">
+    <meta name="keywords"
+        content="diseño UX UI, UX, UI, experiencia de usuario, interfaz de usuario, user research, prototipado interactivo, usabilidad, diseño responsive, design system, agency UX/UI, agencia UX UI">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17578059904"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17578059904"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'AW-17578059904');
-</script>
+        gtag('config', 'AW-17578059904');
+    </script>
 </head>
 
 <body>
-    <nav>
+    <nav class="site-nav" id="site-header">
         <div class="container-xl nav-container">
-            <a href="/home/"><img src="../assets/brand/brand-primary.webp" alt="Logo de UX OK"></a>
+            <a href="#home">
+                <img class="vector" src="../assets/brand/brand-primary.svg" />
+            </a>
             <div class="menu">
                 <ul>
-                <li id="services" class="menu-item">SERVICIOS</li>
+                    <li id="services" class="menu-item">SERVICIOS</li>
+                    <li class="menu-item">TU PARTNER</li>
                 </ul>
                 <a class="button button-primary button-small" href="/contacto/">Contacto</a>
+
             </div>
+            <a id="serviceMobile" href="" class="menu-icon"><img class="vector" src="../assets/icons/menu.svg" /></a>
         </div>
         <div class="menu-options inactive">
-            <div>
-                <a href="/diseno-web/"><img src="/assets/icons/responsive.webp" alt="icono de un browser con un check dentro">Diseño Web</a>
-                <a href="/diseno-ux-ui/"><img src="/assets/icons/search.webp" alt="icono de un browser con un check dentro">Diseño UX/UI</a>
-                <a href="/diseno-aplicaciones/"><img src="/assets/icons/phone.webp" alt="icono de un browser con un check dentro">Diseño de Aplicaciones</a>
+            <div class="menu-option-services">
+                <div class="other-options-mobile">
+                    <a href="/seo/"><img src="/assets/icons/bolt.svg"
+                            alt="icono de un browser con un check dentro">Productos MVP</a>
+                    <a href="/seo/"><img src="/assets/icons/rocket.svg"
+                            alt="icono de un browser con un check dentro">Productos SaaS</a>
                 </div>
                 <div>
-                <a href="/diseno-ecommerce/"><img src="/assets/icons/shopping-car.webp" alt="icono de un browser con un check dentro">Diseño de E-commerce</a>
-                <a href="/seo/"><img src="/assets/icons/seo.webp" alt="icono de un browser con un check dentro">Auditoria SEO</a>
+                    <a href="/diseno-web/"><img src="/assets/icons/responsive.svg"
+                            alt="icono de un browser con un check dentro">Diseño Web</a>
+                    <a href="/diseno-ux-ui/"><img src="/assets/icons/search.svg"
+                            alt="icono de un browser con un check dentro">Diseño UX/UI</a>
+                    <a href="/diseno-aplicaciones/"><img src="/assets/icons/mobile.svg"
+                            alt="icono de un browser con un check dentro">Diseño de Aplicaciones</a>
+                </div>
+                <div>
+                    <a href="/seo/"><img src="/assets/icons/shopping-car.svg"
+                            alt="icono de un browser con un check dentro">Diseño
+                        de E-commerce</a>
+                    <a href="/seo/"><img src="/assets/icons/seo.svg"
+                            alt="icono de un browser con un check dentro">Auditoria SEO</a>
+                </div>
+
             </div>
+
+            <div class="other-mobile">
+                <a href="/seo/"><img src="/assets/icons/hands.svg" alt="icono de un browser con un check dentro">TU
+                    PARTNER</a>
+                <a class="button button-primary button-small" href="/contacto/">Contacto</a>
+            </div>
+
+            <div class="other-desktop">
+                <a href="/seo/"><img src="/assets/icons/bolt.svg"
+                        alt="icono de un browser con un check dentro">Productos MVP</a>
+                <a href="/seo/"><img src="/assets/icons/rocket.svg"
+                        alt="icono de un browser con un check dentro">Productos SaaS</a>
+            </div>
+
         </div>
     </nav>
-    
+
     <main>
         <section class="section-xs hero-banner">
             <div class="container-xl hero-banner-content">
@@ -54,10 +93,11 @@
                 <div class="hero-banner-text">
                     <h1 class="h1">UX/UI Partner Studio</h1>
                     <!--<p class="body-xlarge">Somos profesionales del diseño centramos en la comunicación interdisciplinaria, preparamos la documentación necesaria para equipos de desarrollo y trabajamos en conjunto para la mejor implementación del mismo.</p>-->
-                    <p class="body-xlarge">¿Necesitas un UX Team en tu empresa? ¡Estamos listos para sumarnos! Somos profesionales del diseño centrados en la comunicación interdisciplinaria.</p>
+                    <p class="body-xlarge">¿Necesitas un UX Team en tu empresa? ¡Estamos listos para sumarnos! Somos
+                        profesionales del diseño centrados en la comunicación interdisciplinaria.</p>
                     <a class="button button-secondary" href="#form">trabajemos juntos</a>
                 </div>
-            </div> 
+            </div>
         </section>
 
         <!-- <section class="section-large container-xl"> 
@@ -81,72 +121,98 @@
                 <div class="services-grid-bg"></div>
                 <div class="services-card">
                     <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/search.webp" alt="icono de lupa buscando usuarios"></div>
+                        <div class="icon"><img src="/assets/icons/search.webp" alt="icono de lupa buscando usuarios">
+                        </div>
                         <h3 class="h3">Research</h3>
                     </div>
-                    <p class="body-small-l">Estudiamos y planificamos la mejor manera de conectar con tus usuarios, garantizando una experiencia relevante y funcional.</p>
+                    <p class="body-small-l">Estudiamos y planificamos la mejor manera de conectar con tus usuarios,
+                        garantizando una experiencia relevante y funcional.</p>
                     <div class="services-card-tag">
                         <!--<div class="tag"> <p class="detail-small-l">INVESTIGACIÓN DE USUARIOS</p></div>-->
-                       <div class="tag"><p class="detail-small-l">BENCHMARKING</p></div>
-                    </div>                      
+                        <div class="tag">
+                            <p class="detail-small-l">BENCHMARKING</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="services-card">
                     <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/ux.webp" alt="icono de un browser con un check dentro"></div>
+                        <div class="icon"><img src="/assets/icons/ux.webp"
+                                alt="icono de un browser con un check dentro"></div>
                         <h3 class="h3">UX Design</h3>
                     </div>
-                    <p class="body-small-l ">Definimos el recorrido óptimo de los usuarios en cada paso de la experiencia digital, asegurando que encuentren lo que necesitan de forma rápida y eficiente.</p>
+                    <p class="body-small-l ">Definimos el recorrido óptimo de los usuarios en cada paso de la
+                        experiencia digital, asegurando que encuentren lo que necesitan de forma rápida y eficiente.</p>
                     <div class="services-card-tag">
                         <!--<div class="tag"> <p class="detail-small-l">USER PERSONA</p></div>-->
-                        <div class="tag"><p class="detail-small-l">USER FLOWS</p></div>
-                         <!--<div class="tag"> <p class="detail-small-l">ESTRUCTURA DE LA INFORMACIÓN</p></div>-->
-                        <div class="tag"><p class="detail-small-l">WIREFRAMES</p></div>
-                    </div>                      
+                        <div class="tag">
+                            <p class="detail-small-l">USER FLOWS</p>
+                        </div>
+                        <!--<div class="tag"> <p class="detail-small-l">ESTRUCTURA DE LA INFORMACIÓN</p></div>-->
+                        <div class="tag">
+                            <p class="detail-small-l">WIREFRAMES</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="services-card">
                     <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/ui.webp" alt="icono de un browser con un ojo observando dentro"></div>
+                        <div class="icon"><img src="/assets/icons/ui.webp"
+                                alt="icono de un browser con un ojo observando dentro"></div>
                         <h3 class="h3">UI Design</h3>
                     </div>
-                    <p class="body-small-l ">Damos vida a tu marca a través de un diseño visual atractivo y coherente que facilita la navegación y enriquece la experiencia del usuario.</p>
+                    <p class="body-small-l ">Damos vida a tu marca a través de un diseño visual atractivo y coherente
+                        que facilita la navegación y enriquece la experiencia del usuario.</p>
                     <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">DESIGN SYSTEM</p></div>
-                       <div class="tag"><p class="detail-small-l">PROTOTIPADO</p></div>
-                    </div>                      
+                        <div class="tag">
+                            <p class="detail-small-l">DESIGN SYSTEM</p>
+                        </div>
+                        <div class="tag">
+                            <p class="detail-small-l">PROTOTIPADO</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="services-card">
                     <div class="services-card-heading">
                         <div class="icon"><img src="/assets/icons/testing.webp" alt="icono de un tubo de ensayo"></div>
                         <h3 class="h3">User testing</h3>
                     </div>
-                    <p class="body-small-l ">Validamos que cada decisión de diseño funcione para tu audiencia, ajustando donde sea necesario para perfeccionar la experiencia.</p>
+                    <p class="body-small-l ">Validamos que cada decisión de diseño funcione para tu audiencia, ajustando
+                        donde sea necesario para perfeccionar la experiencia.</p>
                     <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">PRUEBAS DE USABILIDAD</p></div>
-                    </div>                      
+                        <div class="tag">
+                            <p class="detail-small-l">PRUEBAS DE USABILIDAD</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="services-card">
                     <div class="services-card-heading">
                         <div class="icon"><img src="/assets/icons/handoff.webp" alt="icono de un checklist"></div>
                         <h3 class="h3">Handoff</h3>
                     </div>
-                    <p class="body-small-l ">Compartimos documentos con todas las especificaciones necesarias para el desarrollo de cada componente y su implementación en el diseño.</p>
+                    <p class="body-small-l ">Compartimos documentos con todas las especificaciones necesarias para el
+                        desarrollo de cada componente y su implementación en el diseño.</p>
                     <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">ARCHIVO FIGMA DEV MODE</p></div>
-                    </div>                      
+                        <div class="tag">
+                            <p class="detail-small-l">ARCHIVO FIGMA DEV MODE</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="services-card">
                     <div class="services-card-heading">
-                        <div class="icon"><img src="/assets/icons/qa.webp" alt="icono de un los signos de mayor y menor en la mira"></div>
+                        <div class="icon"><img src="/assets/icons/qa.webp"
+                                alt="icono de un los signos de mayor y menor en la mira"></div>
                         <h3 class="h3">QA de implementación</h3>
                     </div>
-                    <p class="body-small-l ">Colaboramos estrechamente con el equipo de desarrollo para garantizar que cada detalle del diseño se implemente con precisión.</p>
+                    <p class="body-small-l ">Colaboramos estrechamente con el equipo de desarrollo para garantizar que
+                        cada detalle del diseño se implemente con precisión.</p>
                     <div class="services-card-tag">
-                        <div class="tag"> <p class="detail-small-l">TRES REVISIONES</p></div>
-                    </div>                      
+                        <div class="tag">
+                            <p class="detail-small-l">TRES REVISIONES</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-<!--
+        <!--
         <section class="section-large container-xl">
             <div class="title title-gradient-secondary">
                 <h2 class="title-regular">Nuestros precios</h2>
@@ -194,22 +260,28 @@
         </section>
         -->
 
-        <section class="section-large container-xl"> 
+        <section class="section-large container-xl">
             <div class="title title-gradient-secondary">
                 <h2 class="title-small">¿Cómo funciona?</h2>
             </div>
             <div class="method-grid">
                 <div class="services-grid-bg"></div>
                 <div class="method-card">
-                    <div class="method-card-title"><span>1.</span><h3>Nos conocemos</h3></div>
+                    <div class="method-card-title"><span>1.</span>
+                        <h3>Nos conocemos</h3>
+                    </div>
                     <p class="body-xlarge">Cuéntanos sobre tu agencia y tus necesidades.</p>
                 </div>
                 <div class="method-card">
-                    <div class="method-card-title"><span>2.</span><h3>Definimos el plan</h3></div>
+                    <div class="method-card-title"><span>2.</span>
+                        <h3>Definimos el plan</h3>
+                    </div>
                     <p class="body-xlarge">Definimos objetivos, estructura y tiempos.</p>
                 </div>
                 <div class="method-card">
-                    <div class="method-card-title"><span>3.</span><h3>Diseñamos contigo</h3></div>
+                    <div class="method-card-title"><span>3.</span>
+                        <h3>Diseñamos contigo</h3>
+                    </div>
                     <p class="body-xlarge">Creamos experiencias digitales alineadas con tus clientes.</p>
                 </div>
             </div>
@@ -222,106 +294,144 @@
             <div class="accordion">
                 <!-- Item 1 -->
                 <div class="accordion-item">
-                  <button class="accordion-header"><p>¿Qué diferencia a UX OK de otras agencias de diseño UI/UX?</p></button>
-                  <div class="accordion-content">
-                    <p>En UX OK, contamos con equipo de diseñadores con conocimientos de marketing y desarrollo, lo que nos permite brindar soluciones globales e integradas, desde el research de un producto, diseño de marca y branding hasta la comunicación y seguimiento con equipos de desarrollo o nuestro propia implementación en el caso de sitios web.</p>
-                  </div>
+                    <button class="accordion-header">
+                        <p>¿Qué diferencia a UX OK de otras agencias de diseño UI/UX?</p>
+                    </button>
+                    <div class="accordion-content">
+                        <p>En UX OK, contamos con equipo de diseñadores con conocimientos de marketing y desarrollo, lo
+                            que nos permite brindar soluciones globales e integradas, desde el research de un producto,
+                            diseño de marca y branding hasta la comunicación y seguimiento con equipos de desarrollo o
+                            nuestro propia implementación en el caso de sitios web.</p>
+                    </div>
                 </div>
-            
+
                 <!-- Item 2 -->
                 <div class="accordion-item">
-                  <button class="accordion-header"><p>¿Realizan rediseños de aplicaciones, sitios webs o software empresarial o B2B?</p></button>
-                  <div class="accordion-content">
-                    <p>Sí, rediseñamos y mejoramos la experiencia de usuario, es decir, actuamos dentro del campo del atractivo visual como en la usabilidad en todo tipo de productos digitales: aplicaciones, sitios webs o softwares empresarial o B2B. Comenzando por análisis UX para encontrar las oportunidades de mejoras proponiendo soluciones que se adapten a tus objetivos.</p>
-                  </div>
+                    <button class="accordion-header">
+                        <p>¿Realizan rediseños de aplicaciones, sitios webs o software empresarial o B2B?</p>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sí, rediseñamos y mejoramos la experiencia de usuario, es decir, actuamos dentro del campo
+                            del atractivo visual como en la usabilidad en todo tipo de productos digitales:
+                            aplicaciones, sitios webs o softwares empresarial o B2B. Comenzando por análisis UX para
+                            encontrar las oportunidades de mejoras proponiendo soluciones que se adapten a tus
+                            objetivos.</p>
+                    </div>
                 </div>
-            
+
                 <!-- Item 3 -->
                 <div class="accordion-item">
-                  <button class="accordion-header"><p>¿Cuánto tiempo tarda en realizarce un proyecto de UI/UX?</p></button>
-                  <div class="accordion-content">
-                    <p>El tiempo que conlleva un proyecto depende de la extensión del mismo (si se necesita una creación de producto desde cero o es un rediseño), los objetivos que se buscan y la amplitud del producto digital. 
-                    Por lo general, un proyecto completo con todos los ítems que nosotros incluimos puede llevar de 2 a 4 meses.</p>
-                  </div>
+                    <button class="accordion-header">
+                        <p>¿Cuánto tiempo tarda en realizarce un proyecto de UI/UX?</p>
+                    </button>
+                    <div class="accordion-content">
+                        <p>El tiempo que conlleva un proyecto depende de la extensión del mismo (si se necesita una
+                            creación de producto desde cero o es un rediseño), los objetivos que se buscan y la amplitud
+                            del producto digital.
+                            Por lo general, un proyecto completo con todos los ítems que nosotros incluimos puede llevar
+                            de 2 a 4 meses.</p>
+                    </div>
                 </div>
 
                 <!-- Item 4 -->
                 <div class="accordion-item">
-                    <button class="accordion-header"><p>¿Cuánto cuesta un proyecto de diseño UI/UX?</p></button>
+                    <button class="accordion-header">
+                        <p>¿Cuánto cuesta un proyecto de diseño UI/UX?</p>
+                    </button>
                     <div class="accordion-content">
-                    <p>El costo depende del tamaño, el alcance del proyecto y tiempo que requiera. Normalmente, un proyecto que necesite todos nuestros servicios comienza en una tarifa de U$S 1000. 
-                    Le recomendamos que nos envíe su idea y nos contactaremos para charlas sobre sus necesidades y objetivos. Gracias a eso podremos armarle un presupuesto a su medida, detallando costos, tiempos y entregables.
-                    También contamos con una tarifa fija de U$S 15 para tareas puntuales o un plan full de U$S 22 sin restricción de tareas. </p>
+                        <p>El costo depende del tamaño, el alcance del proyecto y tiempo que requiera. Normalmente, un
+                            proyecto que necesite todos nuestros servicios comienza en una tarifa de U$S 1000.
+                            Le recomendamos que nos envíe su idea y nos contactaremos para charlas sobre sus necesidades
+                            y objetivos. Gracias a eso podremos armarle un presupuesto a su medida, detallando costos,
+                            tiempos y entregables.
+                            También contamos con una tarifa fija de U$S 15 para tareas puntuales o un plan full de U$S
+                            22 sin restricción de tareas. </p>
                     </div>
                 </div>
 
                 <!-- Item 5 -->
                 <div class="accordion-item">
-                    <button class="accordion-header"><p>¿Cómo funciona la colaboración con su agencia de UX?</p></button>
+                    <button class="accordion-header">
+                        <p>¿Cómo funciona la colaboración con su agencia de UX?</p>
+                    </button>
                     <div class="accordion-content">
-                    <p>Nuestro enfoque interdisciplinario nos lleva a querer relacionarnos con empresas y áreas de diseño, marketing y desarrollo, porque sabemos que juntos hacemos más.
-                    Además de conocer el campo del UX, comprendemos las necesidades comerciales, las de diseño y las especificaciones técnicas para llevar un producto digital a desarrollo. 
-                    Queriendo ser el equipo nexo entre empresas de diseño/marketing y empresas de desarrollo o viceversa. 
-                    Si necesitas un equipo UX en tu empresa no dudes en comunicarte con nosotros.</p>
+                        <p>Nuestro enfoque interdisciplinario nos lleva a querer relacionarnos con empresas y áreas de
+                            diseño, marketing y desarrollo, porque sabemos que juntos hacemos más.
+                            Además de conocer el campo del UX, comprendemos las necesidades comerciales, las de diseño y
+                            las especificaciones técnicas para llevar un producto digital a desarrollo.
+                            Queriendo ser el equipo nexo entre empresas de diseño/marketing y empresas de desarrollo o
+                            viceversa.
+                            Si necesitas un equipo UX en tu empresa no dudes en comunicarte con nosotros.</p>
                     </div>
                 </div>
 
                 <!-- Item 6 -->
                 <div class="accordion-item">
-                    <button class="accordion-header"><p>¿Trabajan con startups o solo como partners?</p></button>
+                    <button class="accordion-header">
+                        <p>¿Trabajan con startups o solo como partners?</p>
+                    </button>
                     <div class="accordion-content">
-                    <p>Sí, trabajamos tanto con empresas y áreas de diseño, marketing y desarrollo como con startups, emprendedores o personas independientes. También con pequeñas, medianas y grandes empresas.
-                    Nosotros nos centramos en brindarles las mejores soluciones a las necesidades de cada cliente no importa su tamaño o en qué etapa del desarrollo se encuentre su proyecto.</p>
+                        <p>Sí, trabajamos tanto con empresas y áreas de diseño, marketing y desarrollo como con
+                            startups, emprendedores o personas independientes. También con pequeñas, medianas y grandes
+                            empresas.
+                            Nosotros nos centramos en brindarles las mejores soluciones a las necesidades de cada
+                            cliente no importa su tamaño o en qué etapa del desarrollo se encuentre su proyecto.</p>
                     </div>
                 </div>
 
                 <!-- Item 7 -->
                 <div class="accordion-item">
-                    <button class="accordion-header"><p>¿Se dedican al desarrollo?</p></button>
+                    <button class="accordion-header">
+                        <p>¿Se dedican al desarrollo?</p>
+                    </button>
                     <div class="accordion-content">
-                    <p>Sí, podemos encargarnos del desarrollo de determinados sitios web, landing page y hasta la puesta en marcha de e-commerces. No es nuestra principal actividad, pero si el proyecto lo permite podemos ofrecerle ese servicio. 
-                    Si no podemos realizarlo, nos encargaremos de la comunicación, la documentación y el seguimiento de la implementación del diseño con equipos de desarrollo correspondientes.</p>
+                        <p>Sí, podemos encargarnos del desarrollo de determinados sitios web, landing page y hasta la
+                            puesta en marcha de e-commerces. No es nuestra principal actividad, pero si el proyecto lo
+                            permite podemos ofrecerle ese servicio.
+                            Si no podemos realizarlo, nos encargaremos de la comunicación, la documentación y el
+                            seguimiento de la implementación del diseño con equipos de desarrollo correspondientes.</p>
                     </div>
                 </div>
-              </div>
+            </div>
         </section>
 
         <section class="section-xl container-xl contact" id="form">
             <div class="contact-text">
-                
-               <div>
-                <h3 class="h3">¡Potencia tu agencia con UX/UI ahora!</h3>
-                <p>No pierdas clientes por no tener UX/UI en tu oferta. Hablemos y sumemos valor a tu agencia.</p>
-               </div>
 
-               <div> 
-                <h3 class="h3">¿Tenés un proyecto?</h3>
-                <p>Contanos tu idea y armamos un presupesto a tu medida.</p>
+                <div>
+                    <h3 class="h3">¡Potencia tu agencia con UX/UI ahora!</h3>
+                    <p>No pierdas clientes por no tener UX/UI en tu oferta. Hablemos y sumemos valor a tu agencia.</p>
+                </div>
+
+                <div>
+                    <h3 class="h3">¿Tenés un proyecto?</h3>
+                    <p>Contanos tu idea y armamos un presupesto a tu medida.</p>
+                </div>
             </div>
-            </div>
-            <form action="https://vulcanocrm.com/endpoints/built-forms/v1/send-message" class="vulcano-form contact-form" method="POST" accept-charset="utf-8">
+            <form action="https://vulcanocrm.com/endpoints/built-forms/v1/send-message"
+                class="vulcano-form contact-form" method="POST" accept-charset="utf-8">
                 <div class="form-group">
-                <label for="field_name">Nombre y Apellido</label>
-                <input type="text" name="name" id="field_name" required />
+                    <label for="field_name">Nombre y Apellido</label>
+                    <input type="text" name="name" id="field_name" required />
                 </div>
 
                 <div class="form-group">
-                <label for="field_email">Mail</label>
-                <input type="email" name="email" id="field_email" required />
+                    <label for="field_email">Mail</label>
+                    <input type="email" name="email" id="field_email" required />
                 </div>
 
                 <div class="form-group">
-                <label for="field_mensaje">Mensaje</label>
-                <textarea name="mensaje" id="field_mensaje" rows="5" required></textarea>
+                    <label for="field_mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="field_mensaje" rows="5" required></textarea>
                 </div>
 
                 <p class="g-recaptcha" data-sitekey="6LdTL9AqAAAAAPYIxRRIIybn5OZYl86iH615ZGVR"></p>
-                <input type="hidden" name="hash" value="VFZSblBRPT0="/>
-                
+                <input type="hidden" name="hash" value="VFZSblBRPT0=" />
+
                 <button class="button button-primary" type="submit" id="submit">Enviar</button>
-                
+
             </form>
-                
+
         </section>
 
         <footer>
@@ -329,8 +439,9 @@
         </footer>
 
     </main>
-    
+
     <script src="js/script.js"></script>
     <script src="https://vulcanocrm.com/wdgt/forms/js/scripts.js"></script>
 </body>
+
 </html>

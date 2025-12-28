@@ -1,4 +1,3 @@
-
 // FONTS SIZES // 
 
 $font-size-50: 12px;
@@ -27,11 +26,11 @@ $line-height-large: 1.7;
 
 //MIXIN SIZE AND RESPONSIBE //
 
-@mixin font-size($font-size, $line-height){
+@mixin font-size($font-size, $line-height) {
     font-size: $font-size;
     line-height: calc($font-size * $line-height);
-    @include media (tablet){
-        font-size: calc($font-size * 1.125);
-        line-height: calc($font-size * 1.125) * $line-height;
-    }
+    // @include media (tablet){
+    //     font-size: calc($font-size * 1.125);
+    //     line-height: calc($font-size * 1.125) * $line-height;
+    // }
 }

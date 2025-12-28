@@ -677,12 +677,6 @@ p {
   font-size: 14px;
   line-height: 21px;
 }
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 15.75px;
-    line-height: 23.625px;
-  }
-}
 
 .h1 {
   font-family: "Space Grotesk";
@@ -690,12 +684,6 @@ p {
   font-weight: 500;
   font-size: 40px;
   line-height: 40px;
-}
-@media only screen and (min-width: 768px) {
-  .h1 {
-    font-size: 45px;
-    line-height: 45px;
-  }
 }
 
 .h2 {
@@ -705,12 +693,6 @@ p {
   font-size: 32px;
   line-height: 41.6px;
 }
-@media only screen and (min-width: 768px) {
-  .h2 {
-    font-size: 36px;
-    line-height: 46.8px;
-  }
-}
 
 .h3 {
   font-family: "Space Grotesk";
@@ -719,24 +701,12 @@ p {
   font-size: 28px;
   line-height: 36.4px;
 }
-@media only screen and (min-width: 768px) {
-  .h3 {
-    font-size: 31.5px;
-    line-height: 40.95px;
-  }
-}
 
 .h4 {
   font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 20px;
   line-height: 26px;
-}
-@media only screen and (min-width: 768px) {
-  .h4 {
-    font-size: 22.5px;
-    line-height: 29.25px;
-  }
 }
 
 .h5 {
@@ -745,24 +715,12 @@ p {
   font-size: 20px;
   line-height: 26px;
 }
-@media only screen and (min-width: 768px) {
-  .h5 {
-    font-size: 22.5px;
-    line-height: 29.25px;
-  }
-}
 
 .h6 {
   font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 20px;
   line-height: 26px;
-}
-@media only screen and (min-width: 768px) {
-  .h6 {
-    font-size: 22.5px;
-    line-height: 29.25px;
-  }
 }
 
 .title {
@@ -771,24 +729,12 @@ p {
   font-size: 22px;
   line-height: 28.6px;
 }
-@media only screen and (min-width: 768px) {
-  .title {
-    font-size: 24.75px;
-    line-height: 32.175px;
-  }
-}
 
 .subtitle {
   font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 16px;
   line-height: 20.8px;
-}
-@media only screen and (min-width: 768px) {
-  .subtitle {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
 }
 
 .body-small-l {
@@ -797,24 +743,12 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (min-width: 768px) {
-  .body-small-l {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
-}
 
 .body-small-r {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 20.8px;
-}
-@media only screen and (min-width: 768px) {
-  .body-small-r {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
 }
 
 .body-small-m {
@@ -823,24 +757,12 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (min-width: 768px) {
-  .body-small-m {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
-}
 
 .body-small-b {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 20.8px;
-}
-@media only screen and (min-width: 768px) {
-  .body-small-b {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
 }
 
 .body-medium-l {
@@ -849,24 +771,12 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (min-width: 768px) {
-  .body-medium-l {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
-}
 
 .body-medium-r {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 20.8px;
-}
-@media only screen and (min-width: 768px) {
-  .body-medium-r {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
 }
 
 .body-medium-m {
@@ -875,24 +785,12 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (min-width: 768px) {
-  .body-medium-m {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
-}
 
 .body-medium-b {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 20.8px;
-}
-@media only screen and (min-width: 768px) {
-  .body-medium-b {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
 }
 
 .body-large-l {
@@ -901,24 +799,12 @@ p {
   font-size: 18px;
   line-height: 23.4px;
 }
-@media only screen and (min-width: 768px) {
-  .body-large-l {
-    font-size: 20.25px;
-    line-height: 26.325px;
-  }
-}
 
 .body-large-r {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
-}
-@media only screen and (min-width: 768px) {
-  .body-large-r {
-    font-size: 20.25px;
-    line-height: 26.325px;
-  }
 }
 
 .body-large-m {
@@ -927,24 +813,12 @@ p {
   font-size: 18px;
   line-height: 23.4px;
 }
-@media only screen and (min-width: 768px) {
-  .body-large-m {
-    font-size: 20.25px;
-    line-height: 26.325px;
-  }
-}
 
 .body-large-b {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-}
-@media only screen and (min-width: 768px) {
-  .body-large-b {
-    font-size: 20.25px;
-    line-height: 26.325px;
-  }
 }
 
 .body-xlarge {
@@ -953,24 +827,12 @@ p {
   font-size: 20px;
   line-height: 26px;
 }
-@media only screen and (min-width: 768px) {
-  .body-xlarge {
-    font-size: 22.5px;
-    line-height: 29.25px;
-  }
-}
 
 .detail-small-l {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 12px;
   line-height: 15.6px;
-}
-@media only screen and (min-width: 768px) {
-  .detail-small-l {
-    font-size: 13.5px;
-    line-height: 17.55px;
-  }
 }
 
 .detail-small-r {
@@ -979,24 +841,12 @@ p {
   font-size: 12px;
   line-height: 15.6px;
 }
-@media only screen and (min-width: 768px) {
-  .detail-small-r {
-    font-size: 13.5px;
-    line-height: 17.55px;
-  }
-}
 
 .detail-small-m {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 12px;
   line-height: 15.6px;
-}
-@media only screen and (min-width: 768px) {
-  .detail-small-m {
-    font-size: 13.5px;
-    line-height: 17.55px;
-  }
 }
 
 .detail-small-b {
@@ -1005,24 +855,12 @@ p {
   font-size: 12px;
   line-height: 15.6px;
 }
-@media only screen and (min-width: 768px) {
-  .detail-small-b {
-    font-size: 13.5px;
-    line-height: 17.55px;
-  }
-}
 
 .detail-medium-l {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 14px;
   line-height: 18.2px;
-}
-@media only screen and (min-width: 768px) {
-  .detail-medium-l {
-    font-size: 15.75px;
-    line-height: 20.475px;
-  }
 }
 
 .detail-medium-r {
@@ -1031,24 +869,12 @@ p {
   font-size: 14px;
   line-height: 18.2px;
 }
-@media only screen and (min-width: 768px) {
-  .detail-medium-r {
-    font-size: 15.75px;
-    line-height: 20.475px;
-  }
-}
 
 .detail-medium-m {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 18.2px;
-}
-@media only screen and (min-width: 768px) {
-  .detail-medium-m {
-    font-size: 15.75px;
-    line-height: 20.475px;
-  }
 }
 
 .detail-medium-b {
@@ -1057,24 +883,12 @@ p {
   font-size: 14px;
   line-height: 18.2px;
 }
-@media only screen and (min-width: 768px) {
-  .detail-medium-b {
-    font-size: 15.75px;
-    line-height: 20.475px;
-  }
-}
 
 .detail-large-l {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
   line-height: 20.8px;
-}
-@media only screen and (min-width: 768px) {
-  .detail-large-l {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
 }
 
 .detail-large-r {
@@ -1083,12 +897,6 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (min-width: 768px) {
-  .detail-large-r {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
-}
 
 .detail-large-m {
   font-family: "Roboto";
@@ -1096,24 +904,12 @@ p {
   font-size: 16px;
   line-height: 20.8px;
 }
-@media only screen and (min-width: 768px) {
-  .detail-large-m {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
-}
 
 .detail-large-b {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 20.8px;
-}
-@media only screen and (min-width: 768px) {
-  .detail-large-b {
-    font-size: 18px;
-    line-height: 23.4px;
-  }
 }
 
 @keyframes face-in {
@@ -1363,6 +1159,18 @@ footer .footer-services {
   gap: 24px;
   flex-wrap: wrap;
 }
+footer .footer-services a {
+  color: #1A1D24;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+footer .footer-services a:hover {
+  color: #1A1D24;
+}
 footer .brand-data {
   width: 100%;
   max-width: 952px;
@@ -1404,11 +1212,16 @@ footer .brand-data-text p {
   font-weight: 400;
 }
 footer .brand-data-text a {
+  color: #1A1D24;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+}
+footer .brand-data-text a:hover {
+  color: #1A1D24;
 }
 footer .brand-data-text-social {
   display: flex;
@@ -1454,12 +1267,6 @@ a {
   line-height: 16px;
   text-align: center;
   border-radius: 8px;
-}
-@media only screen and (min-width: 768px) {
-  .button {
-    font-size: 18px;
-    line-height: 18px;
-  }
 }
 .button-primary {
   color: #1A1D24;
@@ -1558,7 +1365,7 @@ a {
 
 .hero-banner {
   width: 100%;
-  height: 490px;
+  height: 545px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1608,20 +1415,8 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .hero-banner-text h1 {
-    font-size: 58.5px;
-    line-height: 76.05px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .hero-banner-text h1 {
     font-size: 60px;
     line-height: 60px;
-  }
-}
-@media only screen and (min-width: 768px) and (min-width: 768px) {
-  .hero-banner-text h1 {
-    font-size: 67.5px;
-    line-height: 67.5px;
   }
 }
 .hero-banner-text p {
@@ -1631,20 +1426,8 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .hero-banner-text p {
-    font-size: 27px;
-    line-height: 35.1px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .hero-banner-text p {
     font-size: 32px;
     line-height: 41.6px;
-  }
-}
-@media only screen and (min-width: 768px) and (min-width: 768px) {
-  .hero-banner-text p {
-    font-size: 36px;
-    line-height: 46.8px;
   }
 }
 .hero-banner-text span {
@@ -1658,22 +1441,20 @@ a {
 
 .banner {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 40px;
   align-items: center;
   color: #FAFAFA;
-  background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.5) 0%, rgba(57, 242, 174, 0) 100%);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  padding-top: 76px;
 }
 @media only screen and (min-width: 768px) {
   .banner {
     flex-direction: row;
-    background: radial-gradient(62.99% 55.97% at 53.07% -16.11%, rgba(57, 242, 174, 0.5) 0%, rgba(57, 242, 174, 0) 100%);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    height: 600px;
+    padding-top: 0;
   }
 }
 .banner-content {
@@ -1711,6 +1492,10 @@ a {
     width: 50%;
   }
 }
+.banner-text h1 {
+  font-size: 40px;
+  line-height: auto;
+}
 .banner-text span {
   color: #39F2AE;
 }
@@ -1720,12 +1505,11 @@ a {
 }
 .banner-text-description p {
   font-size: 18px;
-  line-height: normal;
+  line-height: auto;
 }
 .banner-text a img {
   width: 24px;
   height: 24px;
-  color: aqua;
 }
 
 .title {
@@ -1799,6 +1583,30 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
+}
+.services-card-secondary {
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+}
+@media only screen and (min-width: 768px) {
+  .services-card-secondary {
+    width: 360px;
+  }
+}
+.services-card-secondary .services-card-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.services-card-secondary .services-card-heading img {
+  width: 48px;
+  height: 48px;
+}
+.services-card-secondary h3 {
+  font-size: 24px;
+  line-height: auto;
 }
 
 .tag {
@@ -2332,18 +2140,23 @@ input:-webkit-autofill:active {
 }
 
 .method-grid {
-  position: relative;
-  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 40px;
-  border-radius: 8px;
-  border: 2px solid rgba(250, 250, 250, 0.1);
-  border-radius: 8px;
-  background: rgba(17, 7, 21, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  max-width: 940px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .services-grid {
@@ -2353,7 +2166,13 @@ input:-webkit-autofill:active {
 .services-grid-primary {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .services-grid-primary {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 .services-grid-secondary {
   display: grid;
@@ -2754,9 +2573,6 @@ input:-webkit-autofill:active {
   width: 300px;
 }
 
-.why-ux-ok {
-  background-color: #050405;
-}
 .why-ux-ok-container {
   display: flex;
   flex-direction: column;
@@ -2792,9 +2608,15 @@ input:-webkit-autofill:active {
   align-items: start;
 }
 .why-ux-ok-text-item img {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 .why-ux-ok-text-item p {
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.why-ux-ok-text-item span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #39F2AE;
 }/*# sourceMappingURL=style.css.map */
