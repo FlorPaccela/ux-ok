@@ -91,6 +91,13 @@
     }
 }
 
+.card-max-width {
+    max-width: auto;
+
+    @include media (tablet) {
+        max-width: 350px;
+    }
+}
 
 .price-card {
     width: 100%;

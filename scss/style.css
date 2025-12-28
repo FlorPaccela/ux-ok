@@ -1645,6 +1645,15 @@ a {
   display: block;
 }
 
+.card-max-width {
+  max-width: auto;
+}
+@media only screen and (min-width: 768px) {
+  .card-max-width {
+    max-width: 350px;
+  }
+}
+
 .price-card {
   width: 100%;
   display: flex;
