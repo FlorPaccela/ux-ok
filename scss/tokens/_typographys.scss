@@ -15,7 +15,7 @@ p {
     font-family: $font-body;
     color: $color-text;
     font-weight: 200;
-    @include font-size ($font-size-75, $line-height-medium);
+    @include font-size ($font-size-100, $line-height-medium);
 }
 
 // HEADINGS //
