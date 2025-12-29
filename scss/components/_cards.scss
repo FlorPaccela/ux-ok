@@ -17,13 +17,6 @@
         padding-bottom: 20px;
     }
 
-    &-tag {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
     &-secondary {
         width: 100%;
         justify-content: start;
@@ -50,6 +43,13 @@
             line-height: auto;
         }
     }
+}
+
+.services-card-tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .tag {
@@ -567,7 +567,7 @@
     align-items: center;
     color: $color-text;
     gap: 16px;
-    max-width: 300px;
+    max-width: 250px;
     text-align: center;
 
     .icon-bg {
@@ -581,6 +581,26 @@
         img {
             width: 48px;
             height: 48px;
+
+        }
+
+        @include media (tablet) {
+            padding: 8px;
+        }
+    }
+
+    &-mvp {
+        max-width: none;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+
+        @include media (tablet) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
         }
     }
 }

@@ -1,0 +1,25 @@
+.mvp-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    p {
+        font-size: 20px;
+        line-height: $line-height-medium;
+        color: $color-text-muted;
+    }
+
+    span {
+        color: $color-brand-primary;
+    }
+}
+
+.services-container-mvp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}

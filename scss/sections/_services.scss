@@ -57,6 +57,22 @@
     filter: blur(25px);
   }
 
+  &-mvp {
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 24px;
+    margin: 0 auto;
+
+    @include media (tablet) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+  }
 
 }
 
