@@ -188,6 +188,69 @@
         justify-content: space-between;
     }
 
+    &-mvp {
+        .method-card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: start;
+            align-items: start;
+            gap: 16px;
+
+            @include media (tablet) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &-mvp {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: start;
+                align-items: start;
+                gap: 16px;
+
+                @include media (tablet) {
+                    width: 360px;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+
+                }
+            }
+
+            &-heading {
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                align-items: center;
+                gap: 16px;
+
+                h3 {
+                    font-size: 24px;
+                    line-height: normal;
+                }
+            }
+
+            &-description {
+                max-width: 500px;
+                padding-left: 8px;
+                border-left: 1px solid $color-brand-primary;
+
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
+        }
+
+        @include media (tablet) {
+            flex-direction: row;
+            justify-content: start;
+        }
+    }
+
     &-heading {
         display: flex;
         flex-direction: row;
@@ -594,13 +657,25 @@
         flex-direction: row;
         justify-content: start;
         align-items: center;
-        gap: 8px;
+        gap: 16px;
+
+        h3 {
+            font-weight: 400;
+            text-align: start;
+        }
 
         @include media (tablet) {
+            width: 300px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 16px;
+
+            h3 {
+                text-align: center;
+            }
         }
+
+
     }
 }

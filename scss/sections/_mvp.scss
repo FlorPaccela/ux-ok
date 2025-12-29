@@ -23,3 +23,35 @@
     align-items: center;
     gap: 16px;
 }
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: $color-card;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba($color-brand-primary, 0.3);
+}
+
+.icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: #39f2ae2a;
+    border-radius: 20px;
+
+    img {
+        width: 48px;
+        height: 48px;
+
+    }
+
+    @include media (tablet) {
+        padding: 8px;
+    }
+}
