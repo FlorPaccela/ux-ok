@@ -421,6 +421,13 @@
     flex: 2; // 20%
 }
 
+/* Estado base para todos los dispositivos */
+.card-wrapper {
+    flex: 1;
+    transition: none;
+    /* Sin transición en mobile para evitar saltos */
+}
+
 .partner-card {
     width: 100%;
     min-height: auto;

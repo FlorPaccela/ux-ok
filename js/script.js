@@ -94,36 +94,70 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const wrappers = document.querySelectorAll('.card-wrapper')
+//CARDS SPECIALIZATIONS
+
+// const wrappers = document.querySelectorAll('.card-wrapper')
+
+// wrappers.forEach(wrapper => {
+//   wrapper.addEventListener('mouseenter', () => {
+//     wrappers.forEach(w => {
+//       const card = w.querySelector('.specialization-card')
+//       card.classList.remove('specialization-card-expanded')
+//       w.classList.remove('expanded', 'shrunk')
+//     })
+
+//     wrapper.classList.add('expanded')
+//     wrapper.querySelector('.specialization-card')
+//       .classList.add('specialization-card-expanded')
+
+//     wrappers.forEach(w => {
+//       if (w !== wrapper) {
+//         w.classList.add('shrunk')
+//       }
+//     })
+//   })
+
+//   wrapper.addEventListener('mouseleave', () => {
+//     wrappers.forEach(w => {
+//       w.classList.remove('expanded', 'shrunk')
+//       w.querySelector('.specialization-card')
+//         .classList.remove('specialization-card-expanded')
+//     })
+//   })
+// })
+
+const wrappers = document.querySelectorAll('.card-wrapper');
 
 wrappers.forEach(wrapper => {
   wrapper.addEventListener('mouseenter', () => {
-    wrappers.forEach(w => {
-      const card = w.querySelector('.specialization-card')
-      card.classList.remove('specialization-card-expanded')
-      w.classList.remove('expanded', 'shrunk')
-    })
-
-    wrapper.classList.add('expanded')
-    wrapper.querySelector('.specialization-card')
-      .classList.add('specialization-card-expanded')
+    // Solo se ejecuta si la pantalla es mayor a 768px
+    if (window.innerWidth < 768) return;
 
     wrappers.forEach(w => {
-      if (w !== wrapper) {
-        w.classList.add('shrunk')
-      }
-    })
-  })
+      const card = w.querySelector('.specialization-card');
+      card.classList.remove('specialization-card-expanded');
+      w.classList.remove('expanded', 'shrunk');
+    });
+
+    wrapper.classList.add('expanded');
+    wrapper.querySelector('.specialization-card').classList.add('specialization-card-expanded');
+
+    wrappers.forEach(w => {
+      if (w !== wrapper) w.classList.add('shrunk');
+    });
+  });
 
   wrapper.addEventListener('mouseleave', () => {
-    wrappers.forEach(w => {
-      w.classList.remove('expanded', 'shrunk')
-      w.querySelector('.specialization-card')
-        .classList.remove('specialization-card-expanded')
-    })
-  })
-})
+    if (window.innerWidth < 768) return;
 
+    wrappers.forEach(w => {
+      w.classList.remove('expanded', 'shrunk');
+      w.querySelector('.specialization-card').classList.remove('specialization-card-expanded');
+    });
+  });
+});
+
+//MENU SCROLL
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("site-header");
 
