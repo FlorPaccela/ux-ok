@@ -2430,7 +2430,7 @@ input:-webkit-autofill:active {
   .services-container {
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 24px;
     padding: 0px;
   }
 }
@@ -2495,6 +2495,22 @@ input:-webkit-autofill:active {
     justify-content: space-between;
     align-items: start;
     gap: 60px;
+  }
+}
+.services-grid-saas {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .services-grid-saas {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
   }
 }
 
@@ -2975,4 +2991,84 @@ input:-webkit-autofill:active {
   .icon-bg {
     padding: 8px;
   }
+}
+
+.audit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .audit-container {
+    flex-direction: row;
+  }
+}
+.audit img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+.audit-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #FAFAFA;
+  padding: 0 16px;
+  gap: 16px;
+  text-align: start;
+}
+.audit-text .h2 {
+  text-transform: none;
+}
+@media only screen and (min-width: 768px) {
+  .audit-text {
+    width: 60%;
+  }
+}
+.audit-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #FAFAFA;
+  padding: 0 16px;
+  gap: 16px;
+  text-align: start;
+}
+.audit-list .h2 {
+  text-transform: none;
+}
+@media only screen and (min-width: 768px) {
+  .audit-list {
+    width: 40%;
+  }
+}
+.audit-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: start;
+  align-items: start;
+}
+.audit-list-item img {
+  width: 24px;
+  height: 24px;
+}
+.audit-list-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.audit-cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: #111419;
+  padding: 24px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(57, 242, 174, 0.3);
 }/*# sourceMappingURL=style.css.map */
