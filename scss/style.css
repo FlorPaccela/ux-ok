@@ -2938,61 +2938,6 @@ input:-webkit-autofill:active {
   color: #39F2AE;
 }
 
-.mvp-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-.mvp-content p {
-  font-size: 20px;
-  line-height: 1.5;
-  color: #8F96A3;
-}
-.mvp-content span {
-  color: #39F2AE;
-}
-
-.services-container-mvp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.cta-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  background-color: #111419;
-  padding: 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(57, 242, 174, 0.3);
-}
-
-.icon-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  background-color: rgba(57, 242, 174, 0.1647058824);
-  border-radius: 20px;
-}
-.icon-bg img {
-  width: 48px;
-  height: 48px;
-}
-@media only screen and (min-width: 768px) {
-  .icon-bg {
-    padding: 8px;
-  }
-}
-
 .audit-cta-container {
   display: flex;
   flex-direction: column;
@@ -3071,4 +3016,59 @@ input:-webkit-autofill:active {
 .audit-list-item p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.mvp-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.mvp-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #8F96A3;
+}
+.mvp-content span {
+  color: #39F2AE;
+}
+
+.services-container-mvp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: #111419;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(57, 242, 174, 0.3);
+}
+
+.icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: rgba(57, 242, 174, 0.1647058824);
+  border-radius: 20px;
+}
+.icon-bg img {
+  width: 48px;
+  height: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .icon-bg {
+    padding: 8px;
+  }
 }/*# sourceMappingURL=style.css.map */
