@@ -670,6 +670,18 @@ body {
   background-color: #090B0F;
 }
 
+.error-code {
+  font-size: clamp(5rem, 18vw, 9rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #39F2AE;
+  letter-spacing: -0.04em;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 p {
   font-family: "Roboto";
   color: #FAFAFA;
@@ -2187,6 +2199,57 @@ a {
   }
 }
 
+.case-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid rgba(99, 99, 99, 0.1);
+  background: #111419;
+  backdrop-filter: blur(5px);
+  color: #FAFAFA;
+  gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .case-card {
+    width: 140px;
+    height: 166px;
+    padding: 20px;
+  }
+}
+.case-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.case-card-secondary {
+  justify-content: center;
+  align-items: start;
+}
+.case-card-secondary .case-card-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .case-card-secondary .case-card-heading {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.case-card-secondary .case-card-heading img {
+  width: 48px;
+  height: 48px;
+}
+.case-card-secondary h3 {
+  font-size: 20px;
+  line-height: auto;
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -3071,4 +3134,56 @@ input:-webkit-autofill:active {
   .icon-bg {
     padding: 8px;
   }
+}
+
+.cases-grid {
+  position: relative;
+  padding: 0;
+}
+.cases-grid-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .cases-grid-primary {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+}
+.cases-grid-primary-center {
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .cases-grid-primary-center {
+    align-items: start;
+  }
+}
+.cases-grid-secondary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .cases-grid-secondary {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+  }
+}
+.cases-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 13, 74, 0.2);
+  filter: blur(25px);
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,13 @@
-
-body{
+body {
     background-color: $color-background;
+}
+
+.error-code {
+    font-size: clamp(5rem, 18vw, 9rem);
+    font-weight: 700;
+    line-height: 1;
+    color: #39F2AE;
+    letter-spacing: -0.04em;
+    margin: 0;
+    user-select: none;
 }
